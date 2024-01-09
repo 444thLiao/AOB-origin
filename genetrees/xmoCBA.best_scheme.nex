@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset xmoC_xmoA = 1-508  509-955;
+  charset xmoB = 956-1770;
+  charpartition mymodels =
+    LG+I+G4: xmoC_xmoA,
+    LG+I+G4: xmoB;
+end;

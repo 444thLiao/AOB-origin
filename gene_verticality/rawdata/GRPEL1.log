@@ -1,0 +1,162 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cl005 (AVX2, FMA3, 94 GB RAM)
+Command: iqtree -nt 2 -m LG -redo -wbtl -bb 1000 -pre /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal -s /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal
+Seed:    586105 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 30 00:56:01 2023
+Kernel:  AVX+FMA - 2 threads (64 CPU cores detected)
+
+Reading alignment file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 56 sequences with 148 columns, 148 distinct patterns
+136 parsimony-informative, 8 singleton sites, 4 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  GCA_902459485.1             0.68%    passed     86.67%
+   2  GCA_007197755.1             0.68%    passed     98.22%
+   3  GCA_014635705.1             2.03%    passed     91.01%
+   4  GCA_004282745.1             0.68%    passed     58.21%
+   5  GCA_016873455.1             0.68%    passed     99.59%
+   6  GCA_001007875.1             0.68%    passed     69.56%
+   7  GCA_009833095.1             2.03%    passed     33.29%
+   8  GCA_900110495.1             2.03%    passed     95.96%
+   9  GCA_000011385.1             0.68%    passed     87.26%
+  10  GCA_001458695.1             0.68%    passed     99.58%
+  11  GCA_003719295.1             0.68%    passed     86.52%
+  12  GCA_014859375.1             1.35%    passed     83.74%
+  13  GCA_001697225.1             1.35%    passed     55.00%
+  14  GCA_000264455.2             0.68%    passed     50.37%
+  15  GCA_010027455.1             1.35%    passed     19.92%
+  16  GCA_003576955.1             0.68%    passed     98.41%
+  17  GCF_004345375.1             2.03%    failed      4.88%
+  18  GCA_000024725.1             0.68%    passed     98.08%
+  19  GCA_000740735.1             0.68%    passed     98.55%
+  20  GCA_006385135.1             0.68%    passed     86.53%
+  21  GCA_004684205.1             0.68%    passed     22.51%
+  22  GCA_001267195.1             1.35%    passed     94.35%
+  23  GCA_017879665.1             0.68%    passed     98.97%
+  24  GCA_003015145.1             0.00%    failed      3.24%
+  25  GCA_000469665.2             2.03%    passed      7.32%
+  26  GCA_000014865.1             0.68%    failed      2.97%
+  27  GCA_005877815.1             1.35%    passed     43.31%
+  28  GCA_902500715.1             0.68%    passed     98.36%
+  29  GCA_002109495.1             1.35%    passed     85.18%
+  30  GCA_016788925.1             0.68%    passed     97.21%
+  31  GCA_016592635.1             0.68%    passed     94.00%
+  32  GCA_003551305.1             0.68%    passed     66.55%
+  33  GCA_001803795.1             0.68%    passed     85.74%
+  34  GCA_013697045.1             0.68%    passed     82.65%
+  35  GCA_000828615.1             0.68%    failed      4.64%
+  36  GCA_002007425.1             0.68%    passed     94.63%
+  37  GCA_001458735.1             0.68%    passed     97.30%
+  38  GCA_016708925.1             0.68%    passed     52.47%
+  39  GCA_018655245.1             2.03%    passed     29.67%
+  40  Arabidopsis_thaliana        0.68%    passed     85.04%
+  41  Ostreococcus_tauri          1.35%    passed     90.53%
+  42  Spizellomyces_punctatus     0.68%    passed     94.71%
+  43  Dictyostelium_discoideum    0.68%    passed     10.77%
+  44  Paramecium_tetraurelia      0.68%    passed     66.03%
+  45  Physcomitrella_patens       0.68%    passed     96.46%
+  46  Phytophthora_infestans      0.68%    passed     97.82%
+  47  Chondrus_crispus            0.68%    passed     95.67%
+  48  Oxytricha_trifallax         0.68%    failed      0.79%
+  49  Oryza_sativa                0.68%    passed     29.78%
+  50  Branchiostoma_floridae      0.68%    passed     70.40%
+  51  Candida_albicans            0.68%    passed     51.19%
+  52  Cyanidioschyzon_merolae     0.68%    passed     74.11%
+  53  Andalucia_godoyi            0.68%    passed     93.35%
+  54  Cyanophora_paradoxa         0.68%    passed     80.51%
+  55  Homo_sapiens                0.68%    failed      2.40%
+  56  Gallus_gallus               0.68%    passed     58.69%
+****  TOTAL                       0.89%  6 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.012 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 586105)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -12415.219
+Optimal log-likelihood: -12270.728
+Parameters optimization took 1 rounds (0.021 sec)
+Computing ML distances based on estimated model parameters... 0.328 sec
+Computing BIONJ tree...
+0.004 seconds
+Log-likelihood of BIONJ tree: -12173.073
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.113 second
+Computing log-likelihood of 98 initial trees ... 1.183 seconds
+Current best score: -12173.073
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -12143.410
+Iteration 10 / LogL: -12146.475 / Time: 0h:0m:4s
+Iteration 20 / LogL: -12159.016 / Time: 0h:0m:6s
+Finish initializing candidate tree set (20)
+Current best tree score: -12143.410 / CPU time: 6.791
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29: -12143.357
+Iteration 30 / LogL: -12144.866 / Time: 0h:0m:8s (0h:0m:29s left)
+Iteration 40 / LogL: -12162.409 / Time: 0h:0m:10s (0h:0m:23s left)
+Iteration 50 / LogL: -12146.841 / Time: 0h:0m:11s (0h:0m:19s left)
+Log-likelihood cutoff on original alignment: -12207.302
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.ufboot
+Iteration 60 / LogL: -12143.376 / Time: 0h:0m:14s (0h:0m:16s left)
+Iteration 70 / LogL: -12147.163 / Time: 0h:0m:15s (0h:0m:13s left)
+Iteration 80 / LogL: -12143.373 / Time: 0h:0m:17s (0h:0m:10s left)
+Iteration 90 / LogL: -12143.844 / Time: 0h:0m:18s (0h:0m:8s left)
+Iteration 100 / LogL: -12144.273 / Time: 0h:0m:20s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -12207.302
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.ufboot
+Iteration 110 / LogL: -12143.616 / Time: 0h:0m:22s (0h:0m:18s left)
+Iteration 120 / LogL: -12150.272 / Time: 0h:0m:24s (0h:0m:16s left)
+Iteration 130 / LogL: -12146.243 / Time: 0h:0m:26s (0h:0m:14s left)
+TREE SEARCH COMPLETED AFTER 130 ITERATIONS / Time: 0h:0m:26s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -12143.357
+Optimal log-likelihood: -12143.356
+Parameters optimization took 1 rounds (0.010 sec)
+BEST SCORE FOUND : -12143.356
+Creating bootstrap support values...
+Split supports printed to NEXUS file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.splits.nex
+Total tree length: 24.144
+
+Total number of iterations: 130
+CPU time used for tree search: 50.699 sec (0h:0m:50s)
+Wall-clock time used for tree search: 26.311 sec (0h:0m:26s)
+Total CPU time used: 51.658 sec (0h:0m:51s)
+Total wall-clock time used: 26.843 sec (0h:0m:26s)
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.splits.nex...
+56 taxa and 379 splits.
+Consensus tree written to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.contree
+Reading input trees file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.contree
+Log-likelihood of consensus tree: -12145.345
+
+Analysis results written to: 
+  IQ-TREE report:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.iqtree
+  Maximum-likelihood tree:       /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.treefile
+  Likelihood distances:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.splits.nex
+  Consensus tree:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.contree
+  UFBoot trees:                  /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.ufboot
+  Screen log file:               /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/GRPEL1.trimal.log
+
+Date and Time: Tue May 30 00:56:29 2023

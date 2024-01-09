@@ -1,0 +1,249 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cl006 (AVX512, FMA3, 125 GB RAM)
+Command: iqtree -nt 2 -m LG -redo -wbtl -bb 1000 -pre /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181 -s /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.aln
+Seed:    732823 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 12 10:21:36 2022
+Kernel:  AVX+FMA - 2 threads (64 CPU cores detected)
+
+Reading alignment file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 99 sequences with 223 columns, 204 distinct patterns
+114 parsimony-informative, 59 singleton sites, 50 constant sites
+                 Gap/Ambiguity  Composition  p-value
+   1  GCA_000011385.1   40.36%    passed     50.91%
+   2  GCA_002007425.1   41.70%    passed     99.03%
+   3  GCA_002072955.1   41.70%    passed     99.88%
+   4  GCA_016873455.1   41.70%    passed     69.32%
+   5  GCA_001458695.1   41.70%    passed     46.57%
+   6  GCA_004421105.1   42.15%    passed     92.80%
+   7  GCA_003534995.1   40.36%    passed     79.46%
+   8  GCA_000469665.2   34.53%    failed      0.00%
+   9  GCA_902810445.1   42.15%    passed     99.88%
+  10  GCA_016207025.1   41.70%    passed     97.17%
+  11  GCA_900107585.1   27.80%    passed     37.28%
+  12  GCA_000332275.1   39.91%    passed     87.54%
+  13  GCA_900110495.1   41.70%    passed     98.05%
+  14  GCA_002868715.1   41.70%    passed     99.53%
+  15  GCA_000760695.4   38.12%    passed     92.42%
+  16  GCA_000024725.1   42.15%    passed     87.99%
+  17  GCA_003851125.1   41.70%    passed     99.67%
+  18  GCA_003258315.1   41.26%    passed     93.78%
+  19  GCA_004195045.1   41.26%    passed     45.08%
+  20  GCA_003576955.1   41.70%    passed     89.04%
+  21  GCA_000380225.1   38.57%    passed     96.93%
+  22  GCA_015709615.1   41.70%    passed     99.23%
+  23  GCA_000317515.1   38.57%    passed     74.99%
+  24  GCA_014859375.1   42.15%    passed     98.99%
+  25  GCA_011090395.1   41.70%    passed     96.11%
+  26  GCA_000949635.1   41.26%    passed     70.93%
+  27  GCA_003149345.1   39.46%    passed     71.70%
+  28  GCA_000228725.3   42.15%    passed     93.46%
+  29  GCA_001267195.1   41.70%    passed     98.07%
+  30  GCA_000934545.1   41.70%    passed     82.71%
+  31  GCA_000379525.1   42.15%    passed     99.31%
+  32  GCA_002924445.1   25.11%    passed     84.61%
+  33  GCA_000013225.1   39.01%    passed     83.85%
+  34  GCA_016592635.1   41.70%    passed     99.98%
+  35  GCA_003003885.1   38.12%    passed     88.53%
+  36  GCA_006385135.1   23.32%    passed     74.76%
+  37  GCA_001904725.1   35.87%    passed     95.64%
+  38  GCA_000263335.1   41.70%    passed     78.91%
+  39  GCA_001890765.1   39.46%    passed     67.16%
+  40  GCA_002109495.1   41.70%    passed     91.61%
+  41  GCA_015709635.1   41.70%    passed     97.49%
+  42  GCA_000948975.1   41.70%    passed     91.05%
+  43  GCA_014635705.1   41.70%    passed     99.11%
+  44  GCA_000314005.1   39.01%    passed     76.17%
+  45  GCA_001803795.1   41.26%    passed     99.60%
+  46  GCA_007197755.1   28.25%    passed     97.54%
+  47  GCA_900119825.1   41.70%    passed     99.54%
+  48  GCA_001697225.1   41.26%    passed     95.68%
+  49  GCA_001458735.1   41.70%    passed     70.60%
+  50  GCA_018655245.1   41.70%    passed     93.84%
+  51  GCA_013697045.1   37.22%    passed     94.64%
+  52  GCA_001566965.1   41.26%    passed     97.67%
+  53  GCA_002356115.1   42.15%    passed     97.87%
+  54  GCA_003551305.1   41.70%    passed     45.18%
+  55  GCA_003696005.1   41.70%    passed     63.39%
+  56  GCA_006496635.1   41.70%    passed     90.66%
+  57  GCA_003015145.1   37.22%    passed     55.74%
+  58  GCA_000317535.1   38.12%    passed     77.80%
+  59  GCA_013140535.1   41.70%    passed     64.99%
+  60  GCA_001881495.1   32.74%    passed     67.41%
+  61  GCA_003644325.1   41.70%    passed     90.38%
+  62  GCA_009833095.1   41.70%    passed     99.04%
+  63  GCA_008189685.1   40.36%    failed      0.40%
+  64  GCA_000828615.1   42.15%    passed     99.59%
+  65  GCA_902500715.1   41.70%    passed     83.52%
+  66  GCA_001007875.1   41.70%    passed     99.98%
+  67  GCA_002218085.1   38.12%    passed     88.46%
+  68  GCA_017879665.1   41.70%    passed     91.84%
+  69  GCA_000952155.1   38.12%    passed     96.58%
+  70  GCA_001747005.1   40.81%    passed     95.53%
+  71  GCA_001469165.1   42.15%    passed     91.82%
+  72  GCA_000740735.1   42.15%    passed     93.16%
+  73  GCA_002355455.1   38.57%    passed     73.75%
+  74  GCF_004345375.1   41.70%    passed     99.16%
+  75  GCA_000317575.1   38.57%    passed     73.09%
+  76  GCA_004168365.1   41.26%    passed     99.32%
+  77  GCA_000014865.1   41.70%    passed     88.98%
+  78  GCA_000332035.1   38.57%    passed     85.24%
+  79  GCA_001187785.1   41.70%    passed     97.87%
+  80  GCA_007992375.1   41.70%    passed     99.67%
+  81  GCA_000214665.1   42.15%    passed     99.98%
+  82  GCA_013521015.1   41.70%    passed     99.93%
+  83  GCA_001772005.1   41.70%    passed     98.48%
+  84  GCA_000317495.1   38.57%    passed     97.08%
+  85  GCA_005524015.1   41.26%    passed     32.95%
+  86  GCA_003015105.1   37.22%    passed     81.76%
+  87  GCA_000264455.2   26.46%    passed     97.96%
+  88  GCA_016708925.1   42.15%    passed     98.92%
+  89  GCA_001644685.1   42.15%    passed     97.48%
+  90  GCA_000346485.2   38.12%    passed     95.23%
+  91  GCA_003719295.1   41.70%    passed     99.24%
+  92  GCA_002162035.1   41.70%    passed     99.44%
+  93  GCA_001828545.1   38.57%    passed     99.20%
+  94  GCA_001828535.1   41.26%    passed     73.33%
+  95  GCA_902459485.1   36.32%    passed     72.47%
+  96  GCA_000473895.1   38.57%    passed     75.90%
+  97  GCA_013141375.1   41.70%    passed     99.95%
+  98  GCA_005877815.1   41.70%    passed     95.72%
+  99  GCA_004282745.1   40.81%    passed     60.03%
+****  TOTAL             39.88%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: GCA_007992375.1 is identical to GCA_003851125.1 but kept for subsequent analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.018 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 732823)...
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -12614.693
+Optimal log-likelihood: -12377.556
+Parameters optimization took 1 rounds (0.047 sec)
+Computing ML distances based on estimated model parameters... 0.974 sec
+Computing BIONJ tree...
+0.007 seconds
+Log-likelihood of BIONJ tree: -12322.168
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.883 second
+Computing log-likelihood of 98 initial trees ... 2.538 seconds
+Current best score: -12312.859
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -12269.831
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -12261.773
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -12252.635
+Iteration 10 / LogL: -12269.129 / Time: 0h:0m:8s
+Iteration 20 / LogL: -12261.161 / Time: 0h:0m:12s
+Finish initializing candidate tree set (20)
+Current best tree score: -12252.635 / CPU time: 12.353
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 24: -12249.849
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -12242.052
+Iteration 30 / LogL: -12242.052 / Time: 0h:0m:16s (0h:0m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -12241.378
+Iteration 40 / LogL: -12245.382 / Time: 0h:0m:19s (0h:0m:47s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 45: -12240.962
+Iteration 50 / LogL: -12246.408 / Time: 0h:0m:23s (0h:0m:45s left)
+Log-likelihood cutoff on original alignment: -12324.074
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+Iteration 60 / LogL: -12241.163 / Time: 0h:0m:27s (0h:0m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 62: -12239.514
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 64: -12236.230
+Iteration 70 / LogL: -12278.057 / Time: 0h:0m:31s (0h:0m:42s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 74: -12235.680
+Iteration 80 / LogL: -12244.355 / Time: 0h:0m:34s (0h:0m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 81: -12235.522
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 82: -12235.115
+Iteration 90 / LogL: -12240.336 / Time: 0h:0m:37s (0h:0m:39s left)
+Iteration 100 / LogL: -12236.943 / Time: 0h:0m:41s (0h:0m:33s left)
+Log-likelihood cutoff on original alignment: -12318.135
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 110: -12232.676
+Iteration 110 / LogL: -12232.676 / Time: 0h:0m:45s (0h:0m:41s left)
+Iteration 120 / LogL: -12244.534 / Time: 0h:0m:48s (0h:0m:36s left)
+Iteration 130 / LogL: -12240.985 / Time: 0h:0m:51s (0h:0m:31s left)
+Iteration 140 / LogL: -12234.232 / Time: 0h:0m:54s (0h:0m:27s left)
+Iteration 150 / LogL: -12246.362 / Time: 0h:0m:57s (0h:0m:23s left)
+Log-likelihood cutoff on original alignment: -12318.135
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 155: -12232.518
+Iteration 160 / LogL: -12242.704 / Time: 0h:1m:1s (0h:0m:36s left)
+Iteration 170 / LogL: -12254.689 / Time: 0h:1m:4s (0h:0m:32s left)
+Iteration 180 / LogL: -12243.653 / Time: 0h:1m:7s (0h:0m:28s left)
+Iteration 190 / LogL: -12241.894 / Time: 0h:1m:10s (0h:0m:24s left)
+Iteration 200 / LogL: -12238.871 / Time: 0h:1m:14s (0h:0m:20s left)
+Log-likelihood cutoff on original alignment: -12318.135
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+Iteration 210 / LogL: -12243.229 / Time: 0h:1m:18s (0h:0m:33s left)
+Iteration 220 / LogL: -12277.639 / Time: 0h:1m:21s (0h:0m:29s left)
+Iteration 230 / LogL: -12244.148 / Time: 0h:1m:24s (0h:0m:25s left)
+Iteration 240 / LogL: -12243.935 / Time: 0h:1m:27s (0h:0m:22s left)
+Iteration 250 / LogL: -12250.139 / Time: 0h:1m:31s (0h:0m:18s left)
+Log-likelihood cutoff on original alignment: -12318.135
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+TREE SEARCH COMPLETED AFTER 256 ITERATIONS / Time: 0h:1m:33s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -12232.518
+Optimal log-likelihood: -12232.518
+Parameters optimization took 1 rounds (0.020 sec)
+BEST SCORE FOUND : -12232.518
+Creating bootstrap support values...
+Split supports printed to NEXUS file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.splits.nex
+Total tree length: 20.975
+
+Total number of iterations: 256
+CPU time used for tree search: 180.299 sec (0h:3m:0s)
+Wall-clock time used for tree search: 92.870 sec (0h:1m:32s)
+Total CPU time used: 182.136 sec (0h:3m:2s)
+Total wall-clock time used: 93.860 sec (0h:1m:33s)
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.splits.nex...
+99 taxa and 852 splits.
+Consensus tree written to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.contree
+Reading input trees file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.contree
+Log-likelihood of consensus tree: -12233.236
+
+Analysis results written to: 
+  IQ-TREE report:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.iqtree
+  Maximum-likelihood tree:       /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.treefile
+  Likelihood distances:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.splits.nex
+  Consensus tree:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.contree
+  UFBoot trees:                  /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.ufboot
+  Screen log file:               /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/cog25_prot/223181.log
+
+Date and Time: Mon Dec 12 10:23:11 2022

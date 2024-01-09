@@ -1,0 +1,1691 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cl002 (AVX2, FMA3, 251 GB RAM)
+Command: iqtree -nt 30 -m MFP+MERGE -redo -mset WAG,LG,JTT,Dayhoff -mrate E,I,G,I+G -mfreq FU -wbtl -bb 1000 -pre ./gene_annotations/extra_genomes_xmoCAB/xmoCBA -s ./gene_annotations/extra_genomes_xmoCAB/concat_aln.aln -spp ./gene_annotations/extra_genomes_xmoCAB/concat_aln.partition
+Seed:    799205 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Aug 20 00:33:09 2022
+Kernel:  AVX+FMA - 30 threads (64 CPU cores detected)
+
+Reading partition model file ./gene_annotations/extra_genomes_xmoCAB/concat_aln.partition ...
+Reading alignment file ./gene_annotations/extra_genomes_xmoCAB/concat_aln.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 1160 sequences with 1770 columns, 1709 distinct patterns
+1323 parsimony-informative, 126 singleton sites, 321 constant sites
+                         Gap/Ambiguity  Composition  p-value
+   1  ref1                      45.25%    passed     93.86%
+   2  ref2                      74.75%    passed     66.71%
+   3  ref3                      66.05%    passed     91.46%
+   4  ref4                      44.97%    failed      1.53%
+   5  ref5                      46.38%    passed     22.96%
+   6  ref6                      46.38%    failed      4.26%
+   7  ref7                      48.08%    passed     15.96%
+   8  ref10                     48.25%    passed     99.34%
+   9  ref11                     44.92%    passed     92.92%
+  10  ref12                     46.05%    passed     84.32%
+  11  ref13                     45.59%    passed     33.82%
+  12  ref14                     46.21%    passed     76.75%
+  13  ref16                     47.57%    passed     68.60%
+  14  ref17                     46.72%    passed     90.31%
+  15  ref18                     66.44%    passed     68.82%
+  16  ref19                     80.62%    passed     84.99%
+  17  ref20                     48.36%    passed     52.94%
+  18  ref22                     48.42%    passed     99.89%
+  19  ref23                     48.08%    passed     41.82%
+  20  ref24                     48.42%    passed     99.64%
+  21  ref27                     48.42%    passed     71.12%
+  22  ref29                     46.78%    passed     83.13%
+  23  ref30                     47.29%    passed     70.52%
+  24  ref32                     48.53%    passed     98.33%
+  25  ref33                     43.73%    failed      0.00%
+  26  ref35                     47.80%    passed     76.98%
+  27  ref36                     49.21%    passed     89.65%
+  28  ref37                     60.68%    passed     97.92%
+  29  ref38                     45.37%    passed     94.28%
+  30  ref40                     79.10%    passed     66.74%
+  31  ref41                     46.10%    failed      2.01%
+  32  ref42                     46.61%    failed      0.00%
+  33  ref43                     78.70%    passed     56.30%
+  34  GCA_009936375.1_operon1   46.72%    passed     89.21%
+  35  GCA_009936375.1_operon2   46.95%    passed     45.84%
+  36  GCA_009936375.1_operon3   46.95%    passed     45.84%
+  37  GCA_004421155.1_operon1   46.38%    failed      0.72%
+  38  GCA_004421155.1_operon2   45.20%    passed      6.56%
+  39  GCA_004421155.1_operon3   61.92%    failed      3.11%
+  40  GCA_000619905.2_operon1   45.82%    passed     50.24%
+  41  GCA_000619905.2_operon2   45.82%    passed     50.24%
+  42  GCA_000619905.2_operon3   45.82%    passed     50.24%
+  43  GCA_002162825.1_operon1   46.72%    passed     40.02%
+  44  GCA_015711015.1_operon1   48.08%    passed     61.04%
+  45  GCA_015711015.1_operon2   48.42%    passed     99.89%
+  46  GCA_905220645.1_operon1   61.47%    passed     96.80%
+  47  GCA_009925585.1_operon1   44.86%    passed     66.44%
+  48  GCA_016177005.1_operon1   46.72%    passed     89.63%
+  49  GCA_024281435.1_operon1   45.20%    passed     93.62%
+  50  GCA_024281435.1_operon2   45.14%    passed     91.80%
+  51  GCA_005880415.1_operon1   74.80%    failed      1.14%
+  52  GCA_004363855.1_operon1   62.66%    passed     92.77%
+  53  GCA_011773785.1_operon1   66.55%    passed     91.19%
+  54  GCA_016869595.1_operon1   46.72%    passed     85.80%
+  55  GCA_000297615.1_operon1   62.66%    passed     80.45%
+  56  GCA_900107165.1_operon1   45.48%    passed     91.02%
+  57  GCA_024331025.1_operon1   60.45%    passed     73.99%
+  58  GCA_003268895.1_operon1   61.02%    passed     32.10%
+  59  GCA_013816325.1_operon1   60.79%    passed     90.79%
+  60  GCA_016715325.1_operon1   44.18%    passed     35.37%
+  61  GCA_016715325.1_operon2   48.53%    passed     99.95%
+  62  GCA_018655245.1_operon1   45.25%    passed     89.61%
+  63  GCA_900155475.1_operon1   48.02%    failed      0.40%
+  64  GCA_900155475.1_operon2   48.02%    passed     99.84%
+  65  GCA_900155475.1_operon3   48.02%    passed     99.84%
+  66  GCA_000299395.1_operon1   66.55%    passed     91.27%
+  67  GCA_003053905.1_operon1   45.03%    passed     36.50%
+  68  GCA_009692365.1_operon1   45.42%    failed      0.00%
+  69  GCA_000188155.2_operon1   47.57%    passed     69.41%
+  70  GCA_900078515.1_operon1   60.51%    passed     90.36%
+  71  GCA_001644045.1_operon1   48.08%    passed     41.82%
+  72  GCA_001644045.1_operon2   48.42%    passed     99.89%
+  73  GCA_002072955.1_operon1   48.42%    passed     71.12%
+  74  GCA_002928495.1_operon1   48.53%    passed     99.56%
+  75  GCA_005877345.1_operon1   76.72%    passed      7.53%
+  76  GCA_018129805.1_operon1   46.61%    passed     64.17%
+  77  GCA_012769535.1_operon1   47.97%    passed     98.65%
+  78  GCA_012769535.1_operon2   47.97%    passed     98.44%
+  79  GCA_009917815.1_operon1   62.09%    passed     72.41%
+  80  GCA_003175215.1_operon1   65.54%    passed     84.81%
+  81  GCA_018697995.1_operon1   48.42%    passed     72.43%
+  82  GCA_000685825.1_operon1   46.72%    passed     87.73%
+  83  GCA_000685825.1_operon2   46.95%    passed     45.72%
+  84  GCA_000685825.1_operon3   46.95%    passed     45.72%
+  85  GCA_012928605.1_operon1   66.55%    passed     86.86%
+  86  GCA_011882205.1_operon1   48.42%    passed     99.89%
+  87  GCA_011882205.1_operon2   48.08%    passed     54.03%
+  88  GCA_024281735.1_operon1   48.59%    passed     93.22%
+  89  GCA_003268875.1_operon1   61.02%    passed     88.45%
+  90  GCA_004213245.1_operon1   49.94%    passed     60.29%
+  91  GCA_900094645.2_operon1   48.42%    passed     82.30%
+  92  GCA_009759665.1_operon1   44.18%    passed     24.47%
+  93  GCA_015659515.1_operon1   46.95%    failed      2.93%
+  94  GCA_003050865.1_operon1   61.02%    passed     88.45%
+  95  GCA_014198245.1_operon1   46.55%    passed     84.91%
+  96  GCA_001458695.1_operon1   45.25%    passed     93.86%
+  97  GCA_009697445.1_operon1   65.99%    passed     80.87%
+  98  GCA_000723185.1_operon1   66.61%    passed     63.76%
+  99  GCA_003646285.1_operon1   46.27%    passed     75.90%
+ 100  GCA_003646285.1_operon2   70.68%    failed      0.47%
+ 101  GCA_016764655.1_operon1   47.63%    passed     51.99%
+ 102  GCA_001567435.1_operon1   45.37%    passed     91.55%
+ 103  GCA_010030305.1_operon1   63.73%    passed     88.90%
+ 104  GCA_004299305.1_operon1   48.53%    passed     99.53%
+ 105  GCA_015709465.1_operon1   48.87%    passed     71.35%
+ 106  GCA_015709465.1_operon2   48.14%    passed     52.70%
+ 107  GCA_015903945.1_operon1   50.23%    passed     93.13%
+ 108  GCA_001918475.1_operon1   66.61%    passed     27.55%
+ 109  GCA_902810445.1_operon1   47.29%    passed     83.74%
+ 110  GCA_009841735.1_operon1   77.23%    passed     38.31%
+ 111  GCA_001312345.1_operon1   62.94%    passed     98.40%
+ 112  GCA_900115125.1_operon1   61.02%    passed     46.02%
+ 113  GCA_016106025.1_operon1   74.75%    passed     76.37%
+ 114  GCA_009925045.1_operon1   48.47%    passed     99.76%
+ 115  GCA_016000285.1_operon1   47.40%    passed     42.19%
+ 116  GCA_016000285.1_operon2   46.21%    passed     83.83%
+ 117  GCA_016000285.1_operon3   46.78%    passed     78.47%
+ 118  GCA_016000285.1_operon4   47.34%    passed     13.48%
+ 119  GCA_014295435.1_operon1   44.97%    failed      0.00%
+ 120  GCA_016925515.1_operon1   48.42%    passed     99.81%
+ 121  GCA_016925515.1_operon2   48.08%    passed     57.20%
+ 122  GCA_002929035.1_operon1   48.53%    passed     98.53%
+ 123  GCA_003666345.1_operon1   48.42%    passed     98.88%
+ 124  GCA_000304315.1_operon1   46.72%    passed     90.31%
+ 125  GCA_000304315.1_operon2   47.57%    passed     76.19%
+ 126  GCA_000304315.1_operon3   47.57%    passed     76.19%
+ 127  GCA_000421465.1_operon1   47.57%    passed     98.11%
+ 128  GCA_000421465.1_operon2   47.57%    passed     98.43%
+ 129  GCA_002156965.1_operon1   66.55%    passed     82.04%
+ 130  GCA_002934385.1_operon1   48.53%    passed     98.78%
+ 131  GCA_002934385.1_operon2   48.02%    passed     45.50%
+ 132  GCA_024330945.1_operon1   60.45%    passed     91.42%
+ 133  GCA_016764415.1_operon1   61.36%    passed     66.86%
+ 134  GCA_013350005.1_operon1   62.03%    passed     52.19%
+ 135  GCA_013350005.1_operon2   46.67%    passed     83.59%
+ 136  GCA_002401525.1_operon1   50.23%    passed     52.66%
+ 137  GCA_002401525.1_operon2   46.21%    passed     58.61%
+ 138  GCA_002401525.1_operon3   46.27%    passed     31.31%
+ 139  GCA_021774035.1_operon1   60.79%    passed     70.77%
+ 140  GCA_018887255.1_operon1   46.72%    passed     84.97%
+ 141  GCA_018887255.1_operon2   46.95%    passed     56.37%
+ 142  GCA_007990675.1_operon1   47.80%    passed     76.68%
+ 143  GCA_008030135.1_operon1   47.34%    passed     84.79%
+ 144  GCA_018698665.1_operon1   46.67%    passed      8.58%
+ 145  GCA_001464735.1_operon1   60.40%    passed     94.11%
+ 146  GCA_004525885.1_operon1   60.62%    passed     39.11%
+ 147  GCA_000963695.1_operon1   71.07%    passed     92.25%
+ 148  GCA_016873515.1_operon1   60.56%    passed     71.35%
+ 149  GCA_018361265.1_operon1   44.58%    failed      1.50%
+ 150  GCA_002117405.1_operon1   47.34%    failed      1.77%
+ 151  GCA_002117405.1_operon2   46.95%    passed     51.37%
+ 152  GCA_002117405.1_operon3   47.68%    passed     46.92%
+ 153  GCA_002117405.1_operon4   47.68%    passed     46.92%
+ 154  GCA_008015595.1_operon1   43.79%    passed     64.60%
+ 155  GCA_016838725.1_operon1   66.55%    passed     67.08%
+ 156  GCA_900112825.1_operon1   60.79%    passed     86.62%
+ 157  GCA_000380645.1_operon1   45.93%    passed     10.68%
+ 158  GCA_000685395.1_operon1   65.99%    passed     56.68%
+ 159  GCA_001423645.1_operon1   48.87%    passed     81.63%
+ 160  GCA_017656075.1_operon1   44.92%    failed      0.02%
+ 161  GCA_000499825.2_operon1   47.57%    passed     68.60%
+ 162  GCA_000499825.2_operon2   62.03%    passed     42.29%
+ 163  GCA_000499825.2_operon3   48.08%    passed     51.29%
+ 164  GCA_024281995.1_operon1   45.59%    passed     94.48%
+ 165  GCA_024281995.1_operon2   67.06%    passed     48.83%
+ 166  GCA_009749305.1_operon1   47.91%    passed     96.77%
+ 167  GCA_016925495.1_operon1   48.42%    passed     44.99%
+ 168  GCA_016925495.1_operon2   48.02%    passed     42.60%
+ 169  GCA_900143275.1_operon1   45.54%    passed     91.02%
+ 170  GCA_900143275.1_operon2   45.54%    passed     91.55%
+ 171  GCA_900143275.1_operon3   45.54%    passed     91.46%
+ 172  GCA_024281935.1_operon1   67.51%    failed      4.48%
+ 173  GCA_024281935.1_operon2   43.79%    passed     78.11%
+ 174  GCA_018129645.1_operon1   47.34%    passed     59.74%
+ 175  GCA_005877105.1_operon1   76.72%    passed      7.53%
+ 176  GCA_000008325.1_operon1   47.97%    passed     98.11%
+ 177  GCA_000008325.1_operon2   47.97%    passed     98.11%
+ 178  GCA_000178815.2_operon1   46.95%    passed     70.17%
+ 179  GCA_000178815.2_operon2   46.95%    passed     70.17%
+ 180  GCA_005877315.1_operon1   78.81%    passed     11.62%
+ 181  GCA_004421185.1_operon1   59.60%    failed      2.03%
+ 182  GCA_004421185.1_operon2   69.49%    failed      1.22%
+ 183  GCA_004421185.1_operon3   46.38%    passed      6.98%
+ 184  GCA_000740745.1_operon1   47.80%    passed     76.98%
+ 185  GCA_005808705.1_operon1   51.53%    passed     73.84%
+ 186  GCA_005808705.1_operon2   60.45%    passed     75.50%
+ 187  GCA_016874775.1_operon1   45.37%    failed      2.41%
+ 188  GCA_000379125.1_operon1   46.95%    passed     37.48%
+ 189  GCA_000379125.1_operon2   46.72%    passed     85.82%
+ 190  GCA_000379125.1_operon3   46.95%    passed     37.48%
+ 191  GCA_014193235.1_operon1   64.69%    passed     66.67%
+ 192  GCA_007826885.1_operon1   76.95%    passed     20.76%
+ 193  GCA_003044035.1_operon1   47.85%    passed     29.20%
+ 194  GCA_007280465.1_operon1   63.73%    failed      3.62%
+ 195  GCA_013388555.1_operon1   59.83%    passed     77.25%
+ 196  GCA_003497255.1_operon1   46.16%    passed     29.20%
+ 197  GCA_015752315.1_operon1   46.10%    failed      2.17%
+ 198  GCA_001552795.1_operon1   45.93%    passed     10.68%
+ 199  GCA_011090335.1_operon1   68.87%    passed      5.90%
+ 200  GCA_011090365.1_operon1   60.45%    passed     96.12%
+ 201  GCA_022836435.1_operon1   45.59%    passed     73.22%
+ 202  GCA_022836435.1_operon2   45.59%    passed     73.22%
+ 203  GCA_022836435.1_operon3   45.59%    passed     73.22%
+ 204  GCA_002209385.1_operon1   48.53%    passed     98.97%
+ 205  GCA_002101205.1_operon1   62.82%    passed     30.12%
+ 206  GCA_005877115.1_operon1   66.72%    passed     44.99%
+ 207  GCA_016201515.1_operon1   65.99%    passed     27.15%
+ 208  GCA_000802205.1_operon1   76.95%    passed     23.25%
+ 209  GCA_003201565.1_operon1   45.59%    passed     76.71%
+ 210  GCA_000746765.1_operon1   66.55%    passed     90.58%
+ 211  GCA_010031255.1_operon1   47.51%    passed     72.98%
+ 212  GCA_000427445.1_operon1   44.46%    passed     20.90%
+ 213  GCA_002788515.1_operon1   64.69%    passed     79.28%
+ 214  GCA_900114795.1_operon1   43.73%    passed     97.44%
+ 215  GCA_020890945.1_operon1   60.79%    passed     78.04%
+ 216  GCA_001543895.1_operon1   46.38%    failed      0.82%
+ 217  GCA_009833095.1_operon1   60.79%    passed     93.76%
+ 218  GCA_016722055.1_operon1   45.08%    passed     93.10%
+ 219  GCA_902806695.1_operon1   48.53%    passed     99.26%
+ 220  GCA_000746145.1_operon1   48.53%    passed     99.35%
+ 221  GCA_000746145.1_operon2   48.08%    passed      8.27%
+ 222  GCA_024331045.1_operon1   60.45%    passed     73.99%
+ 223  GCA_024330925.1_operon1   60.45%    passed     91.42%
+ 224  GCA_024330925.1_operon2   64.18%    passed     92.55%
+ 225  GCA_001644025.1_operon1   48.08%    passed     60.31%
+ 226  GCA_001644025.1_operon2   48.42%    passed     99.89%
+ 227  GCA_013390775.1_operon1   77.18%    passed     87.31%
+ 228  GCA_014859375.1_operon1   48.53%    passed     99.23%
+ 229  GCA_005877385.1_operon1   76.72%    passed     12.90%
+ 230  GCA_016219665.1_operon1   46.67%    passed     68.38%
+ 231  GCA_002356115.1_operon1   47.68%    passed     76.51%
+ 232  GCA_024281355.1_operon1   44.92%    passed     91.80%
+ 233  GCA_003722355.1_operon1   47.57%    passed     65.44%
+ 234  GCA_003722355.1_operon2   48.08%    passed     57.63%
+ 235  GCA_003722355.1_operon3   47.57%    passed     65.44%
+ 236  GCA_003051045.1_operon1   60.79%    passed     86.06%
+ 237  GCA_000955905.3_operon1   66.61%    passed     63.35%
+ 238  GCA_016197285.1_operon1   45.54%    failed      4.18%
+ 239  GCA_011090425.1_operon1   60.51%    passed     85.16%
+ 240  GCA_000328945.1_operon1   66.55%    passed     84.11%
+ 241  GCA_003352295.1_operon1   65.20%    passed     64.99%
+ 242  GCA_010811875.1_operon1   44.18%    passed     21.28%
+ 243  GCA_019635155.1_operon1   45.59%    passed     75.19%
+ 244  GCA_019635155.1_operon2   45.59%    passed     75.19%
+ 245  GCA_016223285.1_operon1   66.61%    passed     37.80%
+ 246  GCA_003666325.1_operon1   48.42%    passed     98.88%
+ 247  GCA_900102495.1_operon1   61.02%    passed     54.85%
+ 248  GCA_900103165.1_operon1   45.82%    passed     57.34%
+ 249  GCA_900103165.1_operon2   45.82%    passed     57.34%
+ 250  GCA_900103165.1_operon3   45.82%    passed     57.34%
+ 251  GCA_900100815.1_operon1   45.31%    passed     90.87%
+ 252  GCA_000241145.2_operon1   64.69%    passed     78.19%
+ 253  GCA_002953135.1_operon1   44.92%    passed     39.27%
+ 254  GCA_019285555.1_operon1   47.97%    passed     98.33%
+ 255  GCA_019285555.1_operon2   47.97%    passed     98.34%
+ 256  GCA_007280335.1_operon1   66.61%    passed     37.08%
+ 257  GCA_011772925.1_operon1   66.55%    passed     91.19%
+ 258  GCA_012959425.1_operon1   71.92%    passed     39.59%
+ 259  GCA_012959425.1_operon2   64.97%    passed     65.28%
+ 260  GCA_014078545.1_operon1   66.55%    passed     76.35%
+ 261  GCA_003046585.1_operon1   60.79%    passed     57.94%
+ 262  GCA_018067295.1_operon1   46.16%    passed     70.59%
+ 263  GCA_900100485.1_operon1   44.41%    passed     93.90%
+ 264  GCA_002162705.1_operon1   48.25%    passed     80.22%
+ 265  GCA_002162705.1_operon2   44.01%    passed     24.00%
+ 266  GCA_002162705.1_operon3   46.78%    passed     82.75%
+ 267  GCA_016715825.1_operon1   48.76%    passed     62.96%
+ 268  GCA_001443365.1_operon1   66.05%    passed     74.63%
+ 269  GCA_002401815.1_operon1   47.97%    passed     81.84%
+ 270  GCA_002401815.1_operon2   43.50%    passed     26.64%
+ 271  GCA_024282195.1_operon1   62.20%    passed     80.68%
+ 272  GCA_002127725.1_operon1   53.67%    passed     98.56%
+ 273  GCA_016721865.1_operon1   55.82%    passed     25.73%
+ 274  GCA_016721865.1_operon2   45.59%    passed     94.40%
+ 275  GCA_016721865.1_operon3   47.29%    passed     97.14%
+ 276  GCA_008030245.1_operon1   47.34%    passed     84.79%
+ 277  GCA_000427625.1_operon1   48.08%    passed     15.96%
+ 278  GCA_000427625.1_operon2   48.53%    passed     99.74%
+ 279  GCA_009861625.1_operon1   76.95%    passed     16.23%
+ 280  GCA_002101235.1_operon1   44.01%    passed     31.84%
+ 281  GCA_002101235.1_operon2   48.25%    passed     94.73%
+ 282  GCA_015709435.1_operon1   45.37%    passed     91.87%
+ 283  GCA_015709435.1_operon2   76.50%    passed     99.24%
+ 284  GCA_022117495.1_operon1   59.44%    passed     92.73%
+ 285  GCA_900101945.1_operon1   61.07%    passed     45.67%
+ 286  GCA_011772905.1_operon1   78.70%    passed     28.28%
+ 287  GCA_009695535.1_operon1   48.53%    passed     99.89%
+ 288  GCA_017306195.1_operon1   45.54%    passed     78.25%
+ 289  GCA_004571025.1_operon1   44.18%    passed     20.33%
+ 290  GCA_014078535.1_operon1   66.55%    passed     87.17%
+ 291  GCA_900206265.1_operon1   45.59%    passed     89.68%
+ 292  GCA_900206265.1_operon2   45.59%    passed     89.68%
+ 293  GCA_900206265.1_operon3   45.59%    passed     89.68%
+ 294  GCA_003448675.1_operon1   62.15%    passed     23.04%
+ 295  GCA_024331085.1_operon1   60.45%    passed     89.33%
+ 296  GCA_017656525.1_operon1   44.92%    failed      0.02%
+ 297  GCA_000383855.1_operon1   48.53%    passed     99.35%
+ 298  GCA_000383855.1_operon2   48.08%    passed     10.62%
+ 299  GCA_905339695.1_operon1   62.60%    passed     66.87%
+ 300  GCA_903064685.1_operon1   52.03%    passed     99.97%
+ 301  GCA_903064685.1_operon2   48.08%    passed     39.29%
+ 302  GCA_001543915.1_operon1   48.36%    failed      1.97%
+ 303  GCA_000014765.1_operon1   45.31%    passed     91.38%
+ 304  GCA_000014765.1_operon2   45.31%    passed     91.38%
+ 305  GCA_015904075.1_operon1   61.07%    passed     10.23%
+ 306  GCA_002730325.1_operon1   67.34%    passed     89.91%
+ 307  GCA_900114745.1_operon1   43.79%    passed     97.00%
+ 308  GCA_000427385.1_operon1   47.85%    passed     98.69%
+ 309  GCA_002928855.1_operon1   48.42%    passed     99.90%
+ 310  GCA_003113265.1_operon1   46.72%    passed     81.60%
+ 311  GCA_011777025.1_operon1   77.23%    passed     63.52%
+ 312  GCA_016707165.1_operon1   75.59%    passed     95.74%
+ 313  GCA_016707165.1_operon2   55.88%    passed     41.09%
+ 314  GCA_016707165.1_operon3   45.65%    passed     88.11%
+ 315  GCA_000018465.1_operon1   66.55%    passed     82.64%
+ 316  GCA_016868415.1_operon1   70.56%    passed      9.66%
+ 317  GCA_021582655.1_operon1   60.79%    passed     71.32%
+ 318  GCA_018780145.1_operon1   46.10%    passed     10.71%
+ 319  GCA_004345375.1_operon1   61.47%    passed     86.12%
+ 320  GCA_004365265.1_operon1   61.02%    passed     88.45%
+ 321  GCA_001856095.1_operon1   48.42%    passed     99.87%
+ 322  GCA_001856095.1_operon2   48.08%    passed     55.04%
+ 323  GCA_015904055.1_operon1   60.45%    passed     73.11%
+ 324  GCA_018066825.1_operon1   46.16%    passed     70.59%
+ 325  GCA_000175095.2_operon1   45.59%    passed     90.74%
+ 326  GCA_000175095.2_operon2   45.59%    passed     90.74%
+ 327  GCA_000175095.2_operon3   45.59%    passed     90.74%
+ 328  GCA_900106545.1_operon1   43.79%    passed     99.35%
+ 329  GCA_006483455.1_operon1   48.42%    passed     98.79%
+ 330  GCA_006483455.1_operon2   48.08%    passed     53.32%
+ 331  GCA_013141375.1_operon1   48.42%    passed     99.09%
+ 332  GCA_013141865.1_operon1   51.64%    passed     24.85%
+ 333  GCA_013141865.1_operon2   48.08%    passed     54.55%
+ 334  GCA_013141865.1_operon3   48.42%    passed     99.83%
+ 335  GCA_016838845.1_operon1   65.14%    passed     77.36%
+ 336  GCA_005116965.1_operon1   45.03%    passed     94.99%
+ 337  GCA_001899235.1_operon1   60.85%    passed     68.23%
+ 338  GCA_000733935.1_operon1   48.42%    passed     94.83%
+ 339  GCA_009840065.1_operon1   77.23%    passed     38.31%
+ 340  GCA_019090455.1_operon1   47.85%    passed     29.05%
+ 341  GCA_019090455.1_operon2   45.20%    passed     29.93%
+ 342  GCA_002934365.1_operon1   47.57%    passed     51.77%
+ 343  GCA_002934365.1_operon2   48.53%    passed     99.39%
+ 344  GCA_900110185.1_operon1   61.02%    passed     83.03%
+ 345  GCA_004421255.1_operon1   46.44%    passed     12.16%
+ 346  GCA_004421255.1_operon2   46.33%    passed     11.67%
+ 347  GCA_004421255.1_operon3   46.38%    failed      2.06%
+ 348  GCA_018668785.1_operon1   48.42%    passed     72.43%
+ 349  GCA_005116745.1_operon1   60.40%    passed     84.22%
+ 350  GCA_902500825.1_operon1   45.31%    passed     92.35%
+ 351  GCA_024331005.1_operon1   60.45%    passed     84.96%
+ 352  GCA_002088235.1_operon1   49.94%    passed     60.29%
+ 353  GCA_013408065.1_operon1   48.47%    passed     71.61%
+ 354  GCA_021604405.1_operon1   54.63%    passed     74.97%
+ 355  GCA_000936425.1_operon1   43.39%    passed     63.24%
+ 356  GCA_012959695.1_operon1   46.67%    passed     20.67%
+ 357  GCA_012959695.1_operon2   47.97%    passed     64.62%
+ 358  GCA_019636945.1_operon1   45.20%    passed     91.06%
+ 359  GCA_014850955.1_operon1   48.42%    passed     99.83%
+ 360  GCA_014850955.1_operon2   48.08%    passed     33.31%
+ 361  GCA_016705625.1_operon1   43.79%    passed     95.91%
+ 362  GCA_016705625.1_operon2   43.79%    passed     95.91%
+ 363  GCA_016213205.1_operon1   48.59%    failed      1.14%
+ 364  GCA_002898655.1_operon1   65.37%    passed     47.89%
+ 365  GCA_008030115.1_operon1   47.34%    passed     84.79%
+ 366  GCA_008124795.1_operon1   43.79%    passed     99.23%
+ 367  GCA_024281755.1_operon1   61.07%    passed     94.35%
+ 368  GCA_024281755.1_operon2   77.40%    passed     64.76%
+ 369  GCA_900116685.1_operon1   45.31%    passed     94.64%
+ 370  GCA_009828925.1_operon1   48.53%    passed     99.86%
+ 371  GCA_002869925.2_operon1   49.66%    passed     65.17%
+ 372  GCA_015709455.1_operon1   46.95%    passed     38.94%
+ 373  GCA_015709455.1_operon2   46.72%    passed     81.33%
+ 374  GCA_015709455.1_operon3   46.95%    passed     38.94%
+ 375  GCA_023248255.1_operon1   59.27%    passed     68.43%
+ 376  GCA_002254365.1_operon1   60.51%    passed     91.64%
+ 377  GCA_900108135.1_operon1   61.13%    passed     83.40%
+ 378  GCA_011322685.1_operon1   55.14%    passed     88.97%
+ 379  GCA_008974855.1_operon1   66.21%    passed     62.40%
+ 380  GCA_004366495.1_operon1   46.72%    passed     87.73%
+ 381  GCA_003855495.1_operon1   47.57%    passed     65.81%
+ 382  GCA_003855495.1_operon2   47.57%    passed     65.81%
+ 383  GCA_013141155.1_operon1   46.72%    passed     69.27%
+ 384  GCA_013141155.1_operon2   48.53%    passed     89.43%
+ 385  GCA_002842395.1_operon1   46.67%    passed     87.45%
+ 386  GCA_002842395.1_operon2   47.06%    passed     50.53%
+ 387  GCA_002716545.1_operon1   47.01%    passed     33.77%
+ 388  GCA_015663695.1_operon1   48.53%    passed     75.40%
+ 389  GCA_011090395.1_operon1   60.34%    passed     94.29%
+ 390  GCA_000241145.1_operon1   64.69%    passed     78.19%
+ 391  GCA_000496735.2_operon1   48.53%    passed     99.79%
+ 392  GCA_000496735.2_operon2   46.89%    passed     71.62%
+ 393  GCA_000496735.2_operon3   48.47%    passed     50.20%
+ 394  GCA_003584865.1_operon1   48.42%    passed     99.91%
+ 395  GCA_004364935.1_operon1   47.29%    failed      2.12%
+ 396  GCA_016865255.1_operon1   48.08%    passed     89.58%
+ 397  GCA_016865255.1_operon2   48.42%    passed     99.87%
+ 398  GCA_000746085.1_operon1   48.14%    passed     42.47%
+ 399  GCA_005877085.1_operon1   66.61%    passed     35.44%
+ 400  GCA_015709635.1_operon1   45.65%    passed     93.79%
+ 401  GCA_015709635.1_operon2   45.65%    passed     93.79%
+ 402  GCA_015709635.1_operon3   45.65%    passed     93.79%
+ 403  GCA_003220675.1_operon1   47.97%    failed      1.65%
+ 404  GCA_016235025.1_operon1   45.82%    passed     79.82%
+ 405  GCA_903064715.1_operon1   48.42%    passed     99.83%
+ 406  GCA_903064715.1_operon2   48.08%    passed     33.31%
+ 407  GCA_014850975.1_operon1   48.42%    passed     99.84%
+ 408  GCA_014850975.1_operon2   48.08%    passed     39.29%
+ 409  GCA_000372845.1_operon1   47.57%    passed     68.60%
+ 410  GCA_000372845.1_operon2   47.57%    passed     68.60%
+ 411  GCA_000372845.1_operon3   48.08%    passed     62.02%
+ 412  GCA_016712165.1_operon1   45.08%    passed     93.06%
+ 413  GCA_000328925.1_operon1   77.12%    passed     67.89%
+ 414  GCA_000328925.1_operon2   66.55%    passed     91.27%
+ 415  GCA_905612245.1_operon1   60.62%    passed     74.52%
+ 416  GCA_900065925.1_operon1   66.61%    passed     30.59%
+ 417  GCA_008030145.1_operon1   47.34%    passed     84.79%
+ 418  GCA_001458735.1_operon1   45.08%    passed     92.60%
+ 419  GCA_001458735.1_operon2   68.81%    passed      5.55%
+ 420  GCA_009922685.1_operon1   69.55%    passed     56.90%
+ 421  GCA_018667815.1_operon1   48.42%    passed     72.43%
+ 422  GCA_011331095.1_operon1   66.78%    passed     51.75%
+ 423  GCA_024331095.1_operon1   60.45%    passed     88.36%
+ 424  GCA_000204585.1_operon1   64.69%    passed     80.86%
+ 425  GCA_013140535.1_operon1   59.44%    passed     86.81%
+ 426  GCA_902196205.1_operon1   62.37%    passed     43.59%
+ 427  GCA_003269155.1_operon1   77.18%    passed     48.19%
+ 428  GCA_000220175.2_operon1   64.69%    passed     62.15%
+ 429  GCA_013521055.1_operon1   64.97%    passed     66.68%
+ 430  GCA_018334095.1_operon1   64.69%    passed     60.46%
+ 431  GCA_900103035.1_operon1   43.79%    passed     71.28%
+ 432  GCA_900103035.1_operon2   43.79%    passed     71.28%
+ 433  GCA_900078535.2_operon1   61.13%    passed     70.96%
+ 434  GCA_002898445.1_operon1   65.37%    passed     55.94%
+ 435  GCA_000220175.1_operon1   64.69%    passed     62.15%
+ 436  GCA_002869895.2_operon1   66.78%    passed     45.92%
+ 437  GCA_019636875.1_operon1   60.45%    passed     95.75%
+ 438  GCA_013390755.1_operon1   77.18%    passed     46.71%
+ 439  GCA_009685175.1_operon1   47.57%    passed     68.60%
+ 440  GCA_009685175.1_operon2   47.57%    passed     68.60%
+ 441  GCA_013867185.1_operon1   78.76%    passed     24.92%
+ 442  GCA_018128925.1_operon1   66.55%    passed     77.65%
+ 443  GCA_016717525.1_operon1   52.66%    passed     92.78%
+ 444  GCA_016717525.1_operon2   66.05%    passed     16.77%
+ 445  GCA_016717525.1_operon3   80.40%    failed      3.60%
+ 446  GCA_900111015.1_operon1   47.91%    passed     66.59%
+ 447  GCA_900111015.1_operon2   46.21%    passed     87.66%
+ 448  GCA_001644015.1_operon1   48.42%    passed     98.02%
+ 449  GCA_004322295.1_operon1   62.54%    passed     45.42%
+ 450  GCA_016932295.1_operon1   62.71%    passed     65.33%
+ 451  GCA_900106625.1_operon1   45.37%    passed     95.85%
+ 452  GCA_900108975.1_operon1   45.31%    passed     91.38%
+ 453  GCA_002083615.1_operon1   48.08%    passed     57.36%
+ 454  GCA_002083615.1_operon2   48.42%    passed     99.70%
+ 455  GCA_002928745.1_operon1   48.53%    passed     99.56%
+ 456  GCA_001772135.1_operon1   55.88%    passed     53.69%
+ 457  GCA_009811675.1_operon1   46.72%    passed     81.60%
+ 458  GCA_009811675.1_operon2   46.95%    passed     50.68%
+ 459  GCA_014237605.1_operon1   45.25%    passed     80.93%
+ 460  GCA_002706265.1_operon1   45.08%    passed     27.43%
+ 461  GCA_002706265.1_operon2   48.70%    passed     87.98%
+ 462  GCA_016097405.1_operon1   48.42%    passed     94.09%
+ 463  GCA_003152135.1_operon1   44.69%    passed     79.88%
+ 464  GCA_900696515.1_operon1   60.51%    passed     90.36%
+ 465  GCA_013114725.1_operon1   77.23%    passed     18.66%
+ 466  GCA_013215285.1_operon1   66.55%    passed     92.02%
+ 467  GCA_012966345.1_operon1   48.53%    passed     75.40%
+ 468  GCA_018653275.1_operon1   48.53%    passed     88.59%
+ 469  GCA_003666335.1_operon1   48.42%    passed     99.22%
+ 470  GCA_011771385.1_operon1   66.55%    passed     91.19%
+ 471  GCA_001644125.1_operon1   46.95%    passed     45.72%
+ 472  GCA_001644125.1_operon2   47.91%    passed     64.81%
+ 473  GCA_001644125.1_operon3   46.72%    passed     90.64%
+ 474  GCA_018661125.1_operon1   48.42%    passed     72.43%
+ 475  GCA_018830325.1_operon1   48.53%    passed     98.82%
+ 476  GCA_011774755.1_operon1   77.23%    passed     63.52%
+ 477  GCA_000365425.1_operon1   48.25%    passed     45.71%
+ 478  GCA_000365425.1_operon2   48.42%    passed     99.91%
+ 479  GCA_000365425.1_operon3   48.08%    passed     32.03%
+ 480  GCA_900100985.1_operon1   61.02%    passed     43.44%
+ 481  GCA_016276965.1_operon1   77.23%    passed     68.23%
+ 482  GCA_001644685.1_operon1   48.08%    passed     44.84%
+ 483  GCA_001644685.1_operon2   48.42%    passed     99.89%
+ 484  GCA_005116885.1_operon1   59.38%    passed     74.31%
+ 485  GCA_002887815.1_operon1   44.97%    failed      0.00%
+ 486  GCA_005931095.1_operon1   48.53%    passed     99.90%
+ 487  GCA_003663975.1_operon1   60.51%    passed     23.41%
+ 488  GCA_011773125.1_operon1   66.55%    passed     91.19%
+ 489  GCA_013694585.1_operon1   76.95%    passed     21.07%
+ 490  GCA_015903995.1_operon1   60.40%    passed     86.17%
+ 491  GCA_018780385.1_operon1   47.34%    passed     37.76%
+ 492  GCA_005799375.1_operon1   60.45%    passed     75.50%
+ 493  GCA_001919295.1_operon1   66.61%    passed     27.55%
+ 494  GCA_005771425.1_operon1   62.03%    passed     64.72%
+ 495  GCA_005771425.1_operon2   46.72%    passed     82.81%
+ 496  GCA_902143375.2_operon1   69.89%    passed     48.02%
+ 497  GCA_000802205.2_operon1   76.95%    passed     23.25%
+ 498  GCA_010027455.1_operon1   44.86%    passed     90.28%
+ 499  GCA_000214665.1_operon1   48.42%    passed     99.64%
+ 500  GCA_009836545.1_operon1   77.40%    passed     37.85%
+ 501  GCA_002331625.1_operon1   60.45%    passed     93.07%
+ 502  GCA_014198235.1_operon1   48.47%    passed     79.56%
+ 503  GCA_015709545.1_operon1   48.08%    passed     40.22%
+ 504  GCA_015709545.1_operon2   46.67%    passed     83.19%
+ 505  GCA_015709545.1_operon3   51.07%    passed     80.96%
+ 506  GCA_905250085.1_operon1   46.44%    passed     29.79%
+ 507  GCA_016178015.1_operon1   46.61%    passed     82.39%
+ 508  GCA_016178015.1_operon2   46.89%    passed     58.00%
+ 509  GCA_007828015.1_operon1   43.90%    passed     11.78%
+ 510  GCA_000389985.1_operon1   45.99%    failed      0.00%
+ 511  GCA_020216985.1_operon1   60.45%    passed     85.52%
+ 512  GCA_002890675.1_operon1   47.74%    passed     23.37%
+ 513  GCA_002890675.1_operon2   48.42%    passed     99.87%
+ 514  GCA_000527115.1_operon1   46.72%    passed     86.69%
+ 515  GCA_000527115.1_operon2   46.95%    passed     45.72%
+ 516  GCA_000527115.1_operon3   46.95%    passed     45.72%
+ 517  GCA_900106875.1_operon1   45.31%    passed     91.38%
+ 518  GCA_900163755.1_operon1   48.53%    passed     99.01%
+ 519  GCA_900163755.1_operon2   46.78%    passed     73.29%
+ 520  GCA_002420045.1_operon1   60.51%    passed     87.76%
+ 521  GCA_008030225.1_operon1   47.34%    passed     84.79%
+ 522  GCA_003702465.1_operon1   66.55%    passed     77.67%
+ 523  GCA_003724325.1_operon1   66.21%    passed     63.25%
+ 524  GCA_001908235.1_operon1   44.18%    passed     15.84%
+ 525  GCA_013141205.1_operon1   60.40%    passed     89.24%
+ 526  GCA_900110495.1_operon1   60.51%    passed     23.41%
+ 527  GCA_016178405.1_operon1   65.99%    passed     28.22%
+ 528  GCA_001007935.1_operon1   43.79%    passed     99.23%
+ 529  GCA_001007935.1_operon2   46.50%    passed     94.54%
+ 530  GCA_019090565.1_operon1   64.41%    passed     74.22%
+ 531  GCA_018657705.1_operon1   66.61%    passed     93.15%
+ 532  GCA_001566965.1_operon1   50.79%    passed     99.11%
+ 533  GCA_022842445.1_operon1   60.45%    passed     68.93%
+ 534  GCA_002789395.1_operon1   64.69%    passed     64.56%
+ 535  GCA_003045125.1_operon1   66.61%    passed     91.28%
+ 536  GCA_900111585.1_operon1   61.02%    passed     79.77%
+ 537  GCA_001770895.1_operon1   47.34%    passed     37.31%
+ 538  GCA_002929135.1_operon1   48.42%    passed     99.90%
+ 539  GCA_002007425.1_operon1   48.08%    passed     94.51%
+ 540  GCA_016181505.1_operon1   66.55%    passed     87.68%
+ 541  GCA_002101225.1_operon1   62.82%    passed     85.84%
+ 542  GCA_000745215.1_operon1   46.72%    passed     86.52%
+ 543  GCA_000745215.1_operon2   46.95%    passed     34.28%
+ 544  GCA_000745215.1_operon3   46.95%    passed     34.28%
+ 545  GCA_016870015.1_operon1   70.96%    passed     58.13%
+ 546  GCA_902143385.2_operon1   62.20%    passed     97.78%
+ 547  GCA_902143385.2_operon2   69.27%    passed     30.31%
+ 548  GCA_024282015.1_operon1   53.79%    passed     99.95%
+ 549  GCA_000685925.1_operon1   48.53%    passed     99.86%
+ 550  GCA_000685925.1_operon2   48.08%    passed     63.22%
+ 551  GCA_001437625.1_operon1   77.23%    passed     48.03%
+ 552  GCA_015709615.1_operon1   45.65%    passed     90.28%
+ 553  GCA_015709615.1_operon2   45.65%    passed     90.28%
+ 554  GCA_015709615.1_operon3   45.65%    passed     90.28%
+ 555  GCA_016218315.1_operon1   46.05%    passed     47.65%
+ 556  GCA_002737445.1_operon1   66.55%    passed     85.69%
+ 557  GCA_000355765.4_operon1   45.82%    passed     58.73%
+ 558  GCA_000355765.4_operon2   45.82%    passed     58.73%
+ 559  GCA_000355765.4_operon3   45.82%    passed     58.73%
+ 560  GCA_002795245.1_operon1   44.18%    passed     13.09%
+ 561  GCA_016219645.1_operon1   59.83%    passed     67.62%
+ 562  GCA_002162695.1_operon1   48.36%    passed     80.08%
+ 563  GCA_002162695.1_operon2   46.72%    passed     45.83%
+ 564  GCA_003046215.1_operon1   60.79%    passed     88.77%
+ 565  GCA_005047655.1_operon1   47.18%    passed     10.14%
+ 566  GCA_024331065.1_operon1   45.25%    passed     94.42%
+ 567  GCA_900114285.1_operon1   44.92%    passed     92.92%
+ 568  GCA_003450615.1_operon1   60.28%    passed     15.37%
+ 569  GCA_006740685.1_operon1   66.55%    passed     84.81%
+ 570  GCA_003104975.1_operon1   46.95%    passed     25.51%
+ 571  GCA_005116775.1_operon1   44.35%    passed     76.06%
+ 572  GCA_014191975.1_operon1   48.36%    passed     99.56%
+ 573  GCA_014066365.1_operon1   66.55%    passed     86.86%
+ 574  GCA_001644405.1_operon1   59.15%    passed     84.54%
+ 575  GCA_004357665.1_operon1   63.16%    failed      4.74%
+ 576  GCA_010028325.1_operon1   67.34%    passed     30.78%
+ 577  GCA_000242875.2_operon1   78.70%    passed     56.30%
+ 578  GCA_000155655.1_operon1   62.54%    passed     90.74%
+ 579  GCA_004564215.1_operon1   44.80%    passed     99.55%
+ 580  GCA_002784675.1_operon1   78.76%    passed     40.72%
+ 581  GCA_003050965.1_operon1   61.02%    passed     52.51%
+ 582  GCA_021463765.1_operon1   45.37%    passed     92.48%
+ 583  GCA_007280175.1_operon1   59.49%    passed     91.45%
+ 584  GCA_011319475.1_operon1   66.61%    passed     24.80%
+ 585  GCA_014058405.1_operon1   45.08%    passed     74.58%
+ 586  GCA_003994235.2_operon1   47.63%    passed     66.04%
+ 587  GCA_003994235.2_operon2   48.53%    passed     99.77%
+ 588  GCA_016873455.1_operon1   60.56%    passed     78.49%
+ 589  GCA_003050825.1_operon1   61.07%    passed     43.39%
+ 590  GCA_018734325.1_operon1   48.19%    failed      0.07%
+ 591  GCA_018734325.1_operon2   48.42%    passed     99.47%
+ 592  GCA_015222725.1_operon1   45.03%    passed     90.22%
+ 593  GCA_000745375.1_operon1   48.08%    passed      8.88%
+ 594  GCA_000745375.1_operon2   48.53%    passed     94.38%
+ 595  GCA_002713325.1_operon1   66.78%    passed     50.03%
+ 596  GCA_919901735.1_operon1   59.49%    passed     82.04%
+ 597  GCA_017310545.1_operon1   46.44%    passed     85.02%
+ 598  GCA_017310545.1_operon2   46.44%    passed     85.52%
+ 599  GCA_005239465.1_operon1   45.42%    passed     98.50%
+ 600  GCA_008030255.1_operon1   47.34%    passed     84.79%
+ 601  GCA_010028435.1_operon1   66.61%    passed     46.45%
+ 602  GCA_004343025.1_operon1   48.08%    passed     41.82%
+ 603  GCA_004343025.1_operon2   48.42%    passed     99.89%
+ 604  GCA_013140705.1_operon1   46.89%    passed     75.43%
+ 605  GCA_013140705.1_operon2   48.53%    passed     99.45%
+ 606  GCA_013140705.1_operon3   48.14%    passed     46.93%
+ 607  GCA_003633815.1_operon1   45.71%    passed     75.20%
+ 608  GCA_003633815.1_operon2   45.71%    passed     75.20%
+ 609  GCA_003633815.1_operon3   45.71%    passed     75.20%
+ 610  GCA_018982845.1_operon1   47.63%    passed     44.24%
+ 611  GCA_018982845.1_operon2   47.63%    passed     44.24%
+ 612  GCA_018982845.1_operon3   46.89%    passed     36.91%
+ 613  GCA_003664085.1_operon1   46.33%    passed     81.26%
+ 614  GCA_003664085.1_operon2   46.33%    passed     81.26%
+ 615  GCA_003664085.1_operon3   46.33%    passed     81.26%
+ 616  GCA_019285575.1_operon1   47.97%    passed     98.11%
+ 617  GCA_019285575.1_operon2   47.97%    passed     98.11%
+ 618  GCA_017353815.1_operon1   44.86%    passed     95.87%
+ 619  GCA_016106165.1_operon1   64.97%    passed     66.68%
+ 620  GCA_024281765.1_operon1   45.59%    passed     88.44%
+ 621  GCA_014075315.1_operon1   66.55%    passed     91.97%
+ 622  GCA_002746135.1_operon1   46.95%    passed     66.78%
+ 623  GCA_018069775.1_operon1   47.34%    passed     38.42%
+ 624  GCA_015478645.1_operon1   46.44%    passed     53.70%
+ 625  GCA_013139085.1_operon1   77.40%    passed     63.23%
+ 626  GCA_000297415.1_operon1   45.20%    passed      6.56%
+ 627  GCA_000297415.1_operon2   61.92%    failed      3.11%
+ 628  GCA_000297415.1_operon3   46.38%    failed      0.72%
+ 629  GCA_003500065.1_operon1   61.36%    passed     44.40%
+ 630  GCA_003500065.1_operon2   45.48%    failed      0.44%
+ 631  GCA_003978585.1_operon1   48.36%    passed     20.55%
+ 632  GCA_008015565.1_operon1   69.32%    passed      6.25%
+ 633  GCA_000812185.1_operon1   66.61%    passed     91.28%
+ 634  GCA_016712905.1_operon1   45.82%    passed     53.48%
+ 635  GCA_015476545.1_operon1   48.53%    passed     99.35%
+ 636  GCA_000299365.1_operon1   77.12%    passed     67.89%
+ 637  GCA_016200035.1_operon1   66.38%    passed     45.13%
+ 638  GCA_022117455.1_operon1   60.73%    passed     52.56%
+ 639  GCA_009922305.1_operon1   65.20%    passed     84.18%
+ 640  GCA_003646365.1_operon1   46.33%    passed     57.71%
+ 641  GCA_002317795.1_operon1   66.44%    passed     79.73%
+ 642  GCA_011775845.1_operon1   77.23%    passed     63.52%
+ 643  GCA_002869885.2_operon1   44.52%    passed     92.80%
+ 644  GCA_009595005.1_operon1   60.51%    passed     91.64%
+ 645  GCA_002923755.1_operon1   48.53%    passed     99.07%
+ 646  GCA_018333785.1_operon1   48.53%    passed     99.84%
+ 647  GCA_000196355.1_operon1   45.54%    passed     78.75%
+ 648  GCA_000196355.1_operon2   45.54%    passed     78.75%
+ 649  GCA_000196355.1_operon3   45.54%    passed     78.75%
+ 650  GCA_009694705.1_operon1   66.55%    passed     86.61%
+ 651  GCA_001455205.1_operon1   45.59%    passed     89.26%
+ 652  GCA_001455205.1_operon2   45.59%    passed     88.01%
+ 653  GCA_001455205.1_operon3   45.59%    passed     88.01%
+ 654  GCA_013043295.1_operon1   64.69%    passed     85.86%
+ 655  GCA_003193945.1_operon1   77.18%    passed     83.27%
+ 656  GCA_016745395.1_operon1   62.09%    passed     46.10%
+ 657  GCA_016745395.1_operon2   46.89%    passed     29.25%
+ 658  GCA_002787055.1_operon1   66.61%    passed     56.77%
+ 659  GCA_016869555.1_operon1   46.72%    passed     86.63%
+ 660  GCA_016869555.1_operon2   70.96%    passed     58.13%
+ 661  GCA_003269055.1_operon1   61.02%    passed     84.54%
+ 662  GCA_012960755.1_operon1   46.78%    failed      2.04%
+ 663  GCA_902500705.1_operon1   60.51%    passed     80.05%
+ 664  GCA_002163215.1_operon1   48.36%    passed     73.78%
+ 665  GCA_005877205.1_operon1   66.61%    passed     23.40%
+ 666  GCA_900128525.1_operon1   48.42%    passed     87.64%
+ 667  GCA_003011925.2_operon1   60.79%    passed     88.43%
+ 668  GCA_013390395.1_operon1   66.55%    passed     87.06%
+ 669  GCA_003176155.1_operon1   54.69%    failed      4.08%
+ 670  GCA_024331225.1_operon1   45.25%    passed     94.42%
+ 671  GCA_009665125.1_operon1   66.55%    passed     14.24%
+ 672  GCA_015664335.1_operon1   50.00%    passed     51.28%
+ 673  GCA_013867345.1_operon1   66.55%    passed     89.58%
+ 674  GCA_016838795.1_operon1   77.23%    passed     74.04%
+ 675  GCA_902500755.1_operon1   60.45%    passed     79.57%
+ 676  GCA_002483475.1_operon1   60.51%    passed     94.48%
+ 677  GCA_019090225.1_operon1   46.16%    passed     46.43%
+ 678  GCA_016838745.1_operon1   66.55%    passed     87.29%
+ 679  GCA_003201725.1_operon1   60.79%    passed     86.06%
+ 680  GCA_002162815.1_operon1   46.67%    passed     59.07%
+ 681  GCA_900248165.1_operon1   65.37%    passed     53.60%
+ 682  GCA_004421195.1_operon1   46.38%    failed      0.72%
+ 683  GCA_004421195.1_operon2   45.20%    passed      6.56%
+ 684  GCA_004421195.1_operon3   61.92%    failed      3.11%
+ 685  GCA_000576245.1_operon1   49.66%    passed     44.40%
+ 686  GCA_013407385.1_operon1   64.69%    passed     64.93%
+ 687  GCA_021582795.1_operon1   45.59%    passed     87.72%
+ 688  GCA_003646355.1_operon1   46.72%    passed     55.74%
+ 689  GCA_008030215.1_operon1   47.34%    passed     84.79%
+ 690  GCA_011774125.1_operon1   77.23%    passed     63.52%
+ 691  GCA_012961065.1_operon1   65.14%    passed     81.90%
+ 692  GCA_005116835.1_operon1   59.44%    passed     86.81%
+ 693  GCA_013390485.1_operon1   66.55%    passed     86.86%
+ 694  GCA_012961165.1_operon1   46.95%    failed      2.93%
+ 695  GCA_003222585.1_operon1   45.25%    failed      2.96%
+ 696  GCA_004299145.1_operon1   62.71%    passed     89.29%
+ 697  GCA_004299145.1_operon2   48.36%    passed     66.85%
+ 698  GCA_017310505.1_operon1   46.38%    failed      3.04%
+ 699  GCA_017310505.1_operon2   46.44%    passed     11.24%
+ 700  GCA_017310505.1_operon3   46.33%    passed      9.39%
+ 701  GCA_016838865.1_operon1   78.76%    passed     15.40%
+ 702  GCA_016838865.1_operon2   78.76%    failed      4.50%
+ 703  GCA_003514765.1_operon1   43.73%    passed     95.83%
+ 704  GCA_013390385.1_operon1   76.50%    passed     40.72%
+ 705  GCA_005116825.1_operon1   44.52%    passed     90.90%
+ 706  GCA_900114305.1_operon1   60.79%    passed     57.94%
+ 707  GCA_001556145.1_operon1   47.91%    passed      9.31%
+ 708  GCA_000190755.3_operon1   48.02%    passed     44.87%
+ 709  GCA_000190755.3_operon2   48.53%    passed     99.07%
+ 710  GCA_016708955.1_operon1   45.59%    passed     95.49%
+ 711  GCA_016708955.1_operon2   72.20%    passed     26.25%
+ 712  GCA_016708955.1_operon3   60.90%    passed     36.82%
+ 713  GCA_913046415.1_operon1   60.62%    passed     57.38%
+ 714  GCA_016222925.1_operon1   60.40%    passed     90.52%
+ 715  GCA_003352265.1_operon1   65.20%    passed     64.99%
+ 716  GCA_012026875.1_operon1   46.95%    passed     25.51%
+ 717  GCA_004114935.1_operon1   43.28%    passed     13.59%
+ 718  GCA_009859915.1_operon1   44.97%    failed      0.13%
+ 719  GCA_002700385.1_operon1   47.01%    passed     33.77%
+ 720  GCA_002869845.2_operon1   60.40%    passed     90.13%
+ 721  GCA_004353865.1_operon1   47.91%    passed      7.37%
+ 722  GCA_024281955.1_operon1   60.96%    passed     24.91%
+ 723  GCA_001920395.1_operon1   66.61%    passed     22.54%
+ 724  GCA_000372865.1_operon1   66.72%    passed     79.95%
+ 725  GCA_000372865.1_operon2   48.53%    passed     99.11%
+ 726  GCA_016234975.1_operon1   77.23%    passed     53.88%
+ 727  GCA_900111055.1_operon1   60.79%    passed     86.06%
+ 728  GCA_016186075.1_operon1   77.23%    passed     58.87%
+ 729  GCA_014198295.1_operon1   48.47%    passed     77.32%
+ 730  GCA_002402085.1_operon1   57.85%    passed     38.65%
+ 731  GCA_002402085.1_operon2   55.20%    passed     49.45%
+ 732  GCA_018658065.1_operon1   71.92%    passed     30.08%
+ 733  GCA_900106555.1_operon1   45.65%    passed     85.26%
+ 734  GCA_001870125.1_operon1   76.95%    passed     24.91%
+ 735  GCA_000230895.3_operon1   44.97%    failed      0.00%
+ 736  GCA_002709285.1_operon1   76.50%    passed     46.39%
+ 737  GCA_006496635.1_operon1   47.57%    passed     70.31%
+ 738  GCA_003584645.1_operon1   47.91%    passed     97.26%
+ 739  GCA_003584645.1_operon2   47.91%    passed     97.26%
+ 740  GCA_009842575.1_operon1   77.23%    passed     38.31%
+ 741  GCA_013697045.1_operon1   62.37%    passed     65.08%
+ 742  GCA_001644115.1_operon1   48.25%    passed     42.67%
+ 743  GCA_001644115.1_operon2   48.42%    passed     99.91%
+ 744  GCA_001644115.1_operon3   48.08%    passed     41.21%
+ 745  GCA_018242825.1_operon1   68.64%    failed      4.53%
+ 746  GCA_018242825.1_operon2   68.87%    passed      7.39%
+ 747  GCA_018406445.1_operon1   45.82%    passed     52.37%
+ 748  GCA_018406445.1_operon2   45.82%    passed     52.37%
+ 749  GCA_018406445.1_operon3   45.82%    passed     52.37%
+ 750  GCA_024281365.1_operon1   49.77%    passed     50.79%
+ 751  GCA_024281365.1_operon2   76.44%    failed      0.00%
+ 752  GCA_900696045.1_operon1   76.95%    passed     29.13%
+ 753  GCA_016874535.1_operon1   46.16%    passed     13.89%
+ 754  GCA_015709525.1_operon1   47.57%    passed     65.10%
+ 755  GCA_015709525.1_operon2   48.14%    passed     52.70%
+ 756  GCA_002834115.1_operon1   48.42%    passed     99.88%
+ 757  GCA_002834115.1_operon2   48.08%    passed     89.58%
+ 758  GCA_005883405.1_operon1   48.42%    failed      0.14%
+ 759  GCA_900094605.1_operon1   48.47%    passed     76.57%
+ 760  GCA_013390785.1_operon1   77.18%    passed     36.94%
+ 761  GCA_002843155.1_operon1   48.53%    passed     99.95%
+ 762  GCA_018654675.1_operon1   48.42%    passed     72.70%
+ 763  GCA_000012805.1_operon1   47.80%    passed     76.68%
+ 764  GCA_900215345.1_operon1   45.59%    passed     89.26%
+ 765  GCA_900215345.1_operon2   45.59%    passed     89.26%
+ 766  GCA_900215345.1_operon3   45.59%    passed     89.26%
+ 767  GCA_000143085.1_operon1   47.80%    passed     35.02%
+ 768  GCA_000733835.1_operon1   48.53%    passed     97.83%
+ 769  GCA_000733835.1_operon2   48.08%    passed     61.42%
+ 770  GCA_002256705.1_operon1   71.92%    passed     80.97%
+ 771  GCA_000009145.1_operon1   45.37%    passed     95.85%
+ 772  GCA_000009145.1_operon2   45.37%    passed     94.28%
+ 773  GCA_001543925.1_operon1   45.03%    failed      0.83%
+ 774  GCA_003268955.1_operon1   60.79%    passed     76.50%
+ 775  GCA_015664555.1_operon1   48.53%    passed     75.40%
+ 776  GCA_010028485.1_operon1   66.61%    passed     46.45%
+ 777  GCA_010031535.1_operon1   62.88%    passed     89.73%
+ 778  GCA_018647405.1_operon1   66.61%    passed     93.15%
+ 779  GCA_009697485.1_operon1   64.69%    passed     79.46%
+ 780  GCA_017879645.1_operon1   46.05%    passed     96.00%
+ 781  GCA_017879645.1_operon2   60.79%    passed     92.65%
+ 782  GCA_005877075.1_operon1   76.72%    passed     12.90%
+ 783  GCA_013390865.1_operon1   66.55%    passed     86.86%
+ 784  GCA_009996705.1_operon1   61.36%    passed     44.40%
+ 785  GCA_009996705.1_operon2   45.48%    failed      0.38%
+ 786  GCA_019635175.1_operon1   45.65%    passed     88.37%
+ 787  GCA_005889515.1_operon1   62.09%    passed      7.66%
+ 788  GCA_002157835.1_operon1   44.75%    failed      0.00%
+ 789  GCA_018069525.1_operon1   46.89%    passed     34.54%
+ 790  GCA_002379085.1_operon1   47.34%    passed     32.11%
+ 791  GCA_014198315.1_operon1   48.47%    passed     80.83%
+ 792  GCA_012965425.1_operon1   48.53%    passed     75.40%
+ 793  GCA_000955905.1_operon1   66.61%    passed     63.35%
+ 794  GCA_016708925.1_operon1   45.82%    passed     55.52%
+ 795  GCA_009839185.1_operon1   75.65%    passed     25.57%
+ 796  GCA_900111605.1_operon1   60.79%    passed     46.47%
+ 797  GCA_001770965.1_operon1   48.31%    passed     83.96%
+ 798  GCA_001770965.1_operon2   47.34%    passed     37.31%
+ 799  GCA_013337765.1_operon1   44.80%    failed      0.00%
+ 800  GCA_003957705.1_operon1   44.18%    passed     12.81%
+ 801  GCA_018263495.1_operon1   76.50%    passed     67.56%
+ 802  GCA_001644135.1_operon1   48.08%    passed     39.37%
+ 803  GCA_001644135.1_operon2   48.42%    passed     99.81%
+ 804  GCA_003724255.1_operon1   66.21%    passed     63.25%
+ 805  GCA_900103145.1_operon1   61.02%    passed     32.10%
+ 806  GCA_002083565.1_operon1   60.45%    passed     63.73%
+ 807  GCA_007280895.1_operon1   48.53%    passed     99.61%
+ 808  GCA_015904125.1_operon1   60.45%    passed     73.11%
+ 809  GCA_000740735.1_operon1   47.80%    passed     81.25%
+ 810  GCA_000785705.2_operon1   48.08%    passed     41.82%
+ 811  GCA_000785705.2_operon2   48.42%    passed     99.89%
+ 812  GCA_016765265.1_operon1   48.70%    failed      1.16%
+ 813  GCA_016765265.1_operon2   46.05%    passed     69.06%
+ 814  GCA_012959825.1_operon1   48.42%    passed     96.61%
+ 815  GCA_000527095.1_operon1   48.53%    passed     99.86%
+ 816  GCA_009498235.1_operon1   47.97%    passed     84.25%
+ 817  GCA_009498235.1_operon2   47.97%    passed     84.25%
+ 818  GCA_013911135.1_operon1   66.33%    passed     82.30%
+ 819  GCA_003244015.1_operon1   59.44%    passed     98.80%
+ 820  GCA_004364015.1_operon1   61.02%    passed     88.45%
+ 821  GCA_004799025.1_operon1   47.29%    failed      2.12%
+ 822  GCA_016779605.1_operon1   47.63%    passed      5.32%
+ 823  GCA_013450215.1_operon1   60.73%    passed     50.66%
+ 824  GCA_000019665.1_operon1   46.84%    passed     10.19%
+ 825  GCA_000019665.1_operon2   46.38%    passed     22.96%
+ 826  GCA_000019665.1_operon3   46.27%    failed      2.08%
+ 827  GCA_022843765.1_operon1   45.03%    passed     96.59%
+ 828  GCA_004322395.1_operon1   48.53%    passed     99.86%
+ 829  GCA_004322395.1_operon2   47.63%    passed     52.70%
+ 830  GCA_018680225.1_operon1   64.69%    passed     85.86%
+ 831  GCA_003046355.1_operon1   45.31%    passed     90.87%
+ 832  GCA_001644035.1_operon1   48.25%    passed     42.67%
+ 833  GCA_001644035.1_operon2   48.08%    passed     54.53%
+ 834  GCA_001644035.1_operon3   48.42%    passed     99.91%
+ 835  GCA_009843815.1_operon1   75.65%    passed     25.57%
+ 836  GCA_013390375.1_operon1   77.18%    passed     49.08%
+ 837  GCA_004421165.1_operon1   46.38%    failed      0.72%
+ 838  GCA_004421165.1_operon2   45.20%    passed      6.56%
+ 839  GCA_004421165.1_operon3   61.92%    failed      3.11%
+ 840  GCA_900113925.1_operon1   43.79%    passed     99.25%
+ 841  GCA_016838825.1_operon1   78.81%    passed     24.14%
+ 842  GCA_001917505.1_operon1   66.61%    passed     27.55%
+ 843  GCA_016209015.1_operon1   46.05%    passed     48.02%
+ 844  GCA_024102715.1_operon1   43.73%    passed     91.80%
+ 845  GCA_002083395.1_operon1   45.59%    passed     80.54%
+ 846  GCA_019745325.1_operon1   60.79%    passed     70.86%
+ 847  GCA_003046405.1_operon1   61.02%    passed     44.89%
+ 848  GCA_012960025.1_operon1   46.21%    passed     27.72%
+ 849  GCA_900094635.1_operon1   48.42%    passed     90.53%
+ 850  GCA_012928585.1_operon1   66.78%    passed     59.44%
+ 851  GCA_919901595.1_operon1   59.38%    passed     74.31%
+ 852  GCA_012960135.1_operon1   48.42%    passed     82.62%
+ 853  GCA_003242955.1_operon1   47.97%    passed     68.05%
+ 854  GCA_000956175.1_operon1   66.55%    passed     91.76%
+ 855  GCA_004322445.1_operon1   77.23%    passed     37.32%
+ 856  GCA_008030155.1_operon1   47.34%    passed     84.79%
+ 857  GCA_016788465.1_operon1   60.51%    passed     93.96%
+ 858  GCA_013867275.1_operon1   66.55%    passed     80.69%
+ 859  GCA_017833335.1_operon1   62.66%    passed     92.77%
+ 860  GCA_017879625.1_operon1   69.32%    passed      5.79%
+ 861  GCA_017879625.1_operon2   45.65%    passed     77.43%
+ 862  GCA_003645535.1_operon1   51.58%    passed     72.45%
+ 863  GCA_003500095.1_operon1   45.48%    failed      0.38%
+ 864  GCA_003500095.1_operon2   61.36%    passed     44.40%
+ 865  GCA_003500095.1_operon3   61.30%    passed     33.25%
+ 866  GCA_024331125.1_operon1   60.45%    passed     84.10%
+ 867  GCA_013407185.1_operon1   66.55%    passed     83.07%
+ 868  GCA_900115725.1_operon1   69.27%    passed      8.81%
+ 869  GCA_002083405.1_operon1   60.45%    passed     64.42%
+ 870  GCA_019636895.1_operon1   45.08%    passed     92.49%
+ 871  GCA_000960475.2_operon1   46.10%    failed      0.45%
+ 872  GCA_003352245.1_operon1   65.20%    passed     64.99%
+ 873  GCA_005877305.1_operon1   66.61%    passed     38.80%
+ 874  GCA_011319465.1_operon1   66.61%    passed     32.42%
+ 875  GCA_018241205.1_operon1   69.38%    failed      1.73%
+ 876  GCA_010028465.1_operon1   67.12%    passed     46.98%
+ 877  GCA_018129935.1_operon1   46.61%    passed     64.17%
+ 878  GCA_903064525.1_operon1   46.33%    passed     91.30%
+ 879  GCA_903064525.1_operon2   46.33%    passed     94.40%
+ 880  GCA_900115325.1_operon1   61.02%    passed     46.02%
+ 881  GCA_003972945.1_operon1   77.18%    passed     47.72%
+ 882  GCA_016703745.1_operon1   43.79%    passed     77.40%
+ 883  GCA_016703745.1_operon2   55.08%    passed     39.93%
+ 884  GCA_003932755.1_operon1   48.53%    passed     99.72%
+ 885  GCA_003973145.1_operon1   69.94%    failed      1.74%
+ 886  GCA_000024725.1_operon1   48.02%    passed     24.67%
+ 887  GCA_008030235.1_operon1   47.34%    passed     84.79%
+ 888  GCA_003347515.1_operon1   47.91%    passed     37.43%
+ 889  GCA_003347515.1_operon2   46.72%    passed     78.31%
+ 890  GCA_016844685.1_operon1   66.61%    passed     68.15%
+ 891  GCA_017884705.1_operon1   64.07%    passed     83.85%
+ 892  GCA_002162755.1_operon1   46.78%    passed     70.65%
+ 893  GCA_018646885.1_operon1   71.92%    passed     34.60%
+ 894  GCA_018335995.1_operon1   48.08%    passed     71.15%
+ 895  GCA_018335995.1_operon2   62.54%    passed     97.35%
+ 896  GCA_019636915.1_operon1   60.51%    passed     90.89%
+ 897  GCA_015664155.1_operon1   48.53%    passed     75.40%
+ 898  GCA_900107335.1_operon1   44.41%    passed     93.33%
+ 899  GCA_002068095.1_operon1   43.90%    passed     11.78%
+ 900  GCA_024330965.1_operon1   60.45%    passed     87.69%
+ 901  GCA_013330055.1_operon1   66.50%    passed     53.63%
+ 902  GCA_001675455.1_operon1   46.95%    passed     70.17%
+ 903  GCA_900107265.1_operon1   43.79%    passed     99.89%
+ 904  GCA_003113245.1_operon1   48.08%    passed     56.73%
+ 905  GCA_004684205.1_operon1   61.36%    passed     44.40%
+ 906  GCA_004684205.1_operon2   45.48%    failed      0.42%
+ 907  GCA_006788925.1_operon1   48.53%    passed     99.94%
+ 908  GCA_016869995.1_operon1   61.30%    passed     92.14%
+ 909  GCA_004299465.1_operon1   48.53%    passed     99.89%
+ 910  GCA_004299465.1_operon2   48.08%    passed     29.91%
+ 911  GCA_015659575.1_operon1   48.42%    passed     82.62%
+ 912  GCA_900110385.1_operon1   45.65%    passed     85.26%
+ 913  GCA_015075225.1_operon1   45.37%    passed     92.48%
+ 914  GCA_015075225.1_operon2   60.68%    passed     95.34%
+ 915  GCA_002928995.1_operon1   48.53%    passed     99.48%
+ 916  GCA_000341735.1_operon1   48.53%    passed     99.90%
+ 917  GCA_002256735.1_operon1   58.98%    passed     98.28%
+ 918  GCA_021405205.1_operon1   75.88%    passed      6.78%
+ 919  GCA_016214455.1_operon1   47.57%    passed     65.44%
+ 920  GCA_016214455.1_operon2   46.67%    passed     60.17%
+ 921  GCA_016106185.1_operon1   64.97%    passed     66.68%
+ 922  GCA_002737455.1_operon1   66.55%    passed     86.61%
+ 923  GCA_003046605.1_operon1   61.07%    passed     43.39%
+ 924  GCA_019090785.1_operon1   61.36%    passed     57.14%
+ 925  GCA_900109785.1_operon1   61.13%    passed     80.56%
+ 926  GCA_009811655.1_operon1   46.78%    passed     69.51%
+ 927  GCA_009811655.1_operon2   46.95%    passed     39.77%
+ 928  GCA_013140405.1_operon1   62.66%    passed     95.22%
+ 929  GCA_013140405.1_operon2   63.39%    passed     32.38%
+ 930  GCA_011378635.1_operon1   46.95%    passed     53.73%
+ 931  GCA_011378635.1_operon2   46.78%    passed     76.15%
+ 932  GCA_012965845.1_operon1   77.18%    passed     51.00%
+ 933  GCA_018129755.1_operon1   47.34%    passed     59.74%
+ 934  GCA_002929015.1_operon1   48.42%    passed     99.90%
+ 935  GCA_011331925.1_operon1   68.98%    failed      3.13%
+ 936  GCA_018129965.1_operon1   46.61%    passed     64.17%
+ 937  GCA_019750685.1_operon1   60.45%    passed     64.42%
+ 938  GCA_024281715.1_operon1   54.12%    passed     18.17%
+ 939  GCA_001917995.1_operon1   66.61%    passed     27.55%
+ 940  GCA_013330565.1_operon1   66.61%    passed     49.83%
+ 941  GCA_003724285.1_operon1   65.76%    passed     52.89%
+ 942  GCA_015904025.1_operon1   60.45%    passed     73.11%
+ 943  GCA_010029495.1_operon1   62.71%    passed     86.84%
+ 944  GCA_002083355.1_operon1   60.51%    passed     90.36%
+ 945  GCA_004421175.1_operon1   45.20%    passed      6.56%
+ 946  GCA_004421175.1_operon2   61.92%    failed      3.11%
+ 947  GCA_004421175.1_operon3   46.38%    failed      0.72%
+ 948  GCA_003046255.1_operon1   43.73%    passed     95.83%
+ 949  GCA_002928965.1_operon1   48.42%    passed     99.91%
+ 950  GCA_006715515.1_operon1   46.10%    failed      0.62%
+ 951  GCA_008389435.1_operon1   76.95%    passed     16.23%
+ 952  GCA_010028495.1_operon1   66.61%    passed     46.45%
+ 953  GCA_018655005.1_operon1   66.61%    passed     93.15%
+ 954  GCA_013407165.1_operon1   66.55%    passed     93.46%
+ 955  GCA_002752655.1_operon1   46.95%    passed     70.17%
+ 956  GCA_002752655.1_operon2   46.95%    passed     70.17%
+ 957  GCA_002331335.1_operon1   60.56%    passed     66.26%
+ 958  GCA_004421105.1_operon1   48.02%    passed     20.76%
+ 959  GCA_005773025.1_operon1   60.45%    passed     75.50%
+ 960  GCA_015659495.1_operon1   46.67%    passed     20.67%
+ 961  GCA_015659495.1_operon2   47.97%    passed     64.62%
+ 962  GCA_900215485.1_operon1   45.14%    passed     38.03%
+ 963  GCA_900215485.1_operon2   45.14%    passed     38.03%
+ 964  GCA_900215485.1_operon3   45.31%    passed     42.84%
+ 965  GCA_019090705.1_operon1   67.63%    passed     54.76%
+ 966  GCA_019090705.1_operon2   46.27%    passed     51.13%
+ 967  GCA_000817245.1_operon1   45.25%    failed      4.01%
+ 968  GCA_000817245.1_operon2   46.84%    passed     14.22%
+ 969  GCA_000817245.1_operon3   46.38%    failed      4.26%
+ 970  GCA_000817245.1_operon4   73.50%    passed      7.10%
+ 971  GCA_900108305.1_operon1   60.00%    passed     86.82%
+ 972  GCA_016201435.1_operon1   66.61%    passed     37.46%
+ 973  GCA_006742785.1_operon1   60.62%    passed     88.05%
+ 974  GCA_006742785.1_operon2   60.62%    passed     88.05%
+ 975  GCA_000934725.1_operon1   48.08%    passed     19.45%
+ 976  GCA_000934725.1_operon2   62.66%    passed     51.08%
+ 977  GCA_000934725.1_operon3   64.35%    passed     68.11%
+ 978  GCA_013390745.1_operon1   76.50%    passed     58.29%
+ 979  GCA_919902635.1_operon1   45.59%    passed     86.39%
+ 980  GCA_002936975.1_operon1   48.47%    passed     80.96%
+ 981  GCA_008030125.1_operon1   47.34%    passed     84.79%
+ 982  GCA_002727615.1_operon1   44.29%    passed     21.95%
+ 983  GCA_002083365.1_operon1   60.34%    passed     69.65%
+ 984  GCA_004340695.1_operon1   45.59%    passed     76.71%
+ 985  GCA_005793285.1_operon1   60.45%    passed     74.72%
+ 986  GCA_009837245.1_operon1   77.23%    passed     38.31%
+ 987  GCA_018066765.1_operon1   46.72%    passed     71.89%
+ 988  GCA_002379095.1_operon1   47.34%    passed     28.77%
+ 989  GCA_001440035.1_operon1   43.73%    passed     17.33%
+ 990  GCA_002189065.1_operon1   48.42%    passed     87.56%
+ 991  GCA_000379365.1_operon1   46.50%    passed     99.05%
+ 992  GCA_009927345.1_operon1   62.88%    passed     89.73%
+ 993  GCA_007475525.1_operon1   46.38%    failed      4.26%
+ 994  GCA_007475525.1_operon2   46.84%    passed     12.54%
+ 995  GCA_007475525.1_operon3   45.20%    failed      3.23%
+ 996  GCA_007475525.1_operon4   73.50%    passed      7.10%
+ 997  GCA_021774075.1_operon1   45.59%    passed     78.99%
+ 998  GCA_900113575.1_operon1   61.02%    passed     52.06%
+ 999  GCA_900143675.1_operon1   65.31%    passed     23.65%
+1000  GCA_019285535.1_operon1   47.97%    passed     98.00%
+1001  GCA_019285535.1_operon2   47.97%    passed     98.11%
+1002  GCA_009026205.1_operon1   47.85%    passed     18.60%
+1003  GCA_016784875.1_operon1   48.53%    passed     99.20%
+1004  GCA_016880205.1_operon1   59.83%    passed     66.64%
+1005  GCA_002733135.1_operon1   48.14%    passed     85.77%
+1006  GCA_015663895.1_operon1   77.18%    passed     46.37%
+1007  GCA_900167955.1_operon1   66.61%    passed     20.39%
+1008  GCA_018129705.1_operon1   47.34%    passed     59.74%
+1009  GCA_013407145.1_operon1   66.33%    passed     88.93%
+1010  GCA_000242875.3_operon1   78.70%    passed     56.30%
+1011  GCA_002441955.1_operon1   48.08%    passed     31.36%
+1012  GCA_002441955.1_operon2   48.42%    passed     99.92%
+1013  GCA_004571045.1_operon1   44.18%    passed     12.81%
+1014  GCA_016215465.1_operon1   65.37%    passed     66.59%
+1015  GCA_000266905.1_operon1   44.80%    failed      0.00%
+1016  GCA_024281415.1_operon1   45.08%    passed     93.10%
+1017  GCA_000091165.1_operon1   47.85%    passed     18.60%
+1018  GCA_018722605.1_operon1   48.53%    passed     98.91%
+1019  GCA_018722605.1_operon2   46.78%    passed     70.61%
+1020  GCA_013140465.1_operon1   48.53%    passed     99.88%
+1021  GCA_013140715.1_operon1   59.49%    passed     76.99%
+1022  GCA_022843785.1_operon1   45.08%    passed     87.21%
+1023  GCA_002906215.1_operon1   65.37%    passed     53.60%
+1024  GCA_003050805.1_operon1   60.79%    passed     85.78%
+1025  GCA_003050805.1_operon2   60.79%    passed     88.77%
+1026  GCA_003105285.1_operon1   46.72%    passed     68.84%
+1027  GCA_003105285.1_operon2   46.89%    passed     12.89%
+1028  GCA_004168015.1_operon1   49.04%    passed     91.14%
+1029  GCA_003973095.1_operon1   43.50%    passed     52.16%
+1030  GCA_000733855.1_operon1   48.53%    passed     99.72%
+1031  GCA_000733855.1_operon2   48.36%    passed     52.94%
+1032  GCA_003529185.1_operon1   60.51%    passed     87.76%
+1033  GCA_013141505.1_operon1   48.53%    passed     99.89%
+1034  GCA_013141505.1_operon2   46.89%    passed     79.22%
+1035  GCA_900177045.1_operon1   66.61%    passed     27.16%
+1036  GCA_018129925.1_operon1   46.61%    passed     64.17%
+1037  GCA_003666385.1_operon1   48.42%    passed     99.22%
+1038  GCA_016874115.1_operon1   48.53%    passed     99.83%
+1039  GCA_002317825.1_operon1   76.61%    passed     42.77%
+1040  GCA_002317825.1_operon2   77.85%    passed     47.22%
+1041  GCA_014078525.1_operon1   66.55%    passed     90.94%
+1042  GCA_900163745.1_operon1   46.78%    passed     74.82%
+1043  GCA_900163745.1_operon2   48.53%    passed     99.32%
+1044  GCA_013114705.1_operon1   76.95%    passed     21.99%
+1045  GCA_900620265.1_operon1   66.72%    passed     72.20%
+1046  GCA_003646305.1_operon1   46.27%    passed     72.88%
+1047  GCA_900111725.1_operon1   46.16%    passed     92.48%
+1048  GCA_002928915.1_operon1   48.53%    passed     99.46%
+1049  GCA_004570865.1_operon1   44.18%    passed     12.81%
+1050  GCA_003490045.1_operon1   59.83%    failed      0.25%
+1051  GCA_003490045.1_operon2   44.63%    passed     45.66%
+1052  GCA_005877175.1_operon1   77.23%    passed     12.61%
+1053  GCA_000219585.1_operon1   45.59%    passed     96.32%
+1054  GCA_000219585.1_operon2   45.59%    passed     96.32%
+1055  GCA_000219585.1_operon3   45.59%    passed     96.32%
+1056  GCA_001644095.1_operon1   48.08%    passed     40.08%
+1057  GCA_001644095.1_operon2   48.42%    passed     99.95%
+1058  GCA_018129785.1_operon1   46.61%    passed     64.17%
+1059  GCA_016710135.1_operon1   66.84%    passed     41.24%
+1060  GCA_016710135.1_operon2   43.79%    passed     96.66%
+1061  GCA_902826915.1_operon1   45.37%    passed     83.74%
+1062  GCA_011523285.1_operon1   65.31%    passed     75.42%
+1063  GCA_015903955.1_operon1   60.45%    passed     68.25%
+1064  GCA_003702485.1_operon1   66.61%    passed     91.96%
+1065  GCA_024281825.1_operon1   76.21%    failed      4.97%
+1066  GCA_024281825.1_operon2   45.59%    passed     88.04%
+1067  GCA_016125975.1_operon1   66.55%    passed     85.55%
+1068  GCA_016106405.1_operon1   60.73%    passed     52.56%
+1069  GCA_000875775.1_operon1   66.55%    passed     87.17%
+1070  GCA_015904045.1_operon1   60.56%    passed     78.25%
+1071  GCA_016872055.1_operon1   66.61%    passed     56.44%
+1072  GCA_016592635.1_operon1   48.42%    passed     81.17%
+1073  GCA_900111165.1_operon1   60.79%    passed     41.70%
+1074  GCA_017310525.1_operon1   46.84%    passed      5.41%
+1075  GCA_017310525.1_operon2   49.66%    passed      5.78%
+1076  GCA_017310525.1_operon3   46.27%    failed      4.67%
+1077  GCA_002338645.1_operon1   43.79%    passed     71.28%
+1078  GCA_919902055.1_operon1   59.38%    passed     74.31%
+1079  GCA_005116955.1_operon1   53.62%    passed     93.33%
+1080  GCA_007828095.1_operon1   43.90%    passed     11.78%
+1081  GCA_003051105.1_operon1   43.73%    passed     98.17%
+1082  GCA_000426245.1_operon1   44.18%    passed     14.51%
+1083  GCA_013867285.1_operon1   66.55%    passed     89.58%
+1084  GCA_900116835.1_operon1   61.02%    passed     84.54%
+1085  GCA_006175985.1_operon1   48.02%    passed     95.60%
+1086  GCA_006175985.1_operon2   48.02%    passed     92.31%
+1087  GCA_004802635.2_operon1   47.68%    passed     41.74%
+1088  GCA_004802635.2_operon2   46.84%    passed     56.15%
+1089  GCA_004802635.2_operon3   47.68%    passed     41.74%
+1090  GCA_013390475.1_operon1   66.55%    passed     86.86%
+1091  GCA_007991775.1_operon1   43.39%    passed     63.24%
+1092  GCA_002005105.1_operon1   71.30%    passed     44.18%
+1093  GCA_001770905.1_operon1   46.21%    passed     69.76%
+1094  GCA_001770905.1_operon2   54.41%    passed     73.42%
+1095  GCA_013521015.1_operon1   60.73%    passed     52.56%
+1096  GCA_023142275.1_operon1   75.65%    passed     17.23%
+1097  GCA_018650315.1_operon1   78.81%    passed     28.15%
+1098  GCA_018069465.1_operon1   46.72%    passed     71.89%
+1099  GCA_002134785.1_operon1   48.42%    passed     99.76%
+1100  GCA_000283235.1_operon1   47.23%    passed     87.63%
+1101  GCA_000283235.1_operon2   47.63%    passed     77.60%
+1102  GCA_004357735.1_operon1   48.47%    passed      9.11%
+1103  GCA_002256465.1_operon1   78.19%    passed     83.63%
+1104  GCA_009685195.1_operon1   47.63%    passed     77.60%
+1105  GCA_009685195.1_operon2   47.23%    passed     87.63%
+1106  GCA_009685195.1_operon3   47.63%    passed     77.60%
+1107  GCA_900142705.1_operon1   61.02%    passed     32.10%
+1108  GCA_012030815.1_operon1   64.69%    passed     72.93%
+1109  GCA_011058845.1_operon1   46.89%    passed     36.91%
+1110  GCA_011058845.1_operon2   62.09%    passed     40.79%
+1111  GCA_005239475.1_operon1   44.35%    passed     56.15%
+1112  GCA_015709515.1_operon1   47.57%    passed     69.50%
+1113  GCA_000384075.1_operon1   48.53%    passed     98.53%
+1114  GCA_003526045.1_operon1   61.69%    passed     18.36%
+1115  GCA_000214275.3_operon1   48.36%    passed     52.94%
+1116  GCA_000214275.3_operon2   48.53%    passed     99.72%
+1117  GCA_012030925.1_operon1   79.15%    passed     12.42%
+1118  GCA_000515215.1_operon1   48.08%    passed     39.66%
+1119  GCA_000515215.1_operon2   48.42%    passed     99.79%
+1120  GCA_018665985.1_operon1   60.62%    passed     84.44%
+1121  GCA_900107715.1_operon1   61.13%    passed     83.40%
+1122  GCA_000968535.1_operon1   48.53%    passed     99.42%
+1123  GCA_009692195.1_operon1   62.49%    passed     93.97%
+1124  GCA_900167395.1_operon1   78.25%    passed     33.79%
+1125  GCA_007004125.1_operon1   46.72%    passed     84.97%
+1126  GCA_009377575.1_operon1   77.40%    passed     44.25%
+1127  GCA_011776245.1_operon1   77.23%    passed     63.52%
+1128  GCA_016745425.1_operon1   48.31%    passed     46.17%
+1129  GCA_016745425.1_operon2   48.53%    passed     98.49%
+1130  GCA_015659465.1_operon1   46.78%    failed      2.04%
+1131  GCA_014859465.1_operon1   48.42%    passed     97.92%
+1132  GCA_009833085.1_operon1   69.38%    failed      1.78%
+1133  GCA_017833355.1_operon1   62.66%    passed     92.77%
+1134  GCA_016718945.1_operon1   56.27%    passed     36.54%
+1135  GCA_000192415.1_operon1   46.10%    failed      2.01%
+1136  GCA_016200595.1_operon1   69.15%    failed      0.30%
+1137  GCA_018815385.1_operon1   45.08%    passed     30.56%
+1138  GCA_018815385.1_operon2   48.70%    passed     87.98%
+1139  GCA_010028425.1_operon1   66.61%    passed     46.45%
+1140  GCA_003352285.1_operon1   65.20%    passed     64.99%
+1141  GCA_013520955.1_operon1   61.07%    passed     32.81%
+1142  GCA_000200715.1_operon1   66.33%    passed     92.21%
+1143  GCA_905220655.1_operon1   66.61%    passed     60.35%
+1144  GCA_003963405.1_operon1   62.09%    passed     56.16%
+1145  GCA_003963405.1_operon2   44.92%    passed     68.23%
+1146  GCA_001458775.1_operon1   45.03%    passed     92.18%
+1147  GCA_000832065.1_operon1   61.07%    passed     47.01%
+1148  GCA_003569705.1_operon1   64.69%    passed     65.14%
+1149  GCA_009841175.1_operon1   77.23%    passed     38.31%
+1150  GCA_012032965.1_operon1   60.40%    passed     91.85%
+1151  GCA_016763235.1_operon1   76.84%    passed     29.48%
+1152  GCA_021774195.1_operon1   45.65%    passed     87.82%
+1153  GCA_009833125.1_operon1   45.31%    passed     97.49%
+1154  GCA_003201195.1_operon1   45.31%    passed     91.38%
+1155  GCA_008632455.1_operon1   48.08%    passed     51.80%
+1156  GCA_018129685.1_operon1   46.84%    passed     70.03%
+1157  GCA_002256685.1_operon1   48.53%    passed     99.99%
+1158  GCA_900110145.1_operon1   60.79%    passed     33.74%
+1159  GCA_013141335.1_operon1   48.53%    passed     99.97%
+1160  GCA_013407275.1_operon1   65.99%    passed     56.68%
+WARNING: 468 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                     54.43%  81 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	933	508	360	102	Protein+MERGE	xmoC
+2	AA	1142	447	381	43	Protein+MERGE	xmoA
+3	AA	1103	815	582	176	Protein+MERGE	xmoB
+Degree of missing data: 0.083
+Info: multi-threading strategy over alignment sites
+
+NOTE: GCA_001458695.1_operon1 is identical to ref1 but kept for subsequent analysis
+NOTE: GCA_000019665.1_operon2 is identical to ref5 but kept for subsequent analysis
+NOTE: GCA_000817245.1_operon3 is identical to ref6 but kept for subsequent analysis
+NOTE: GCA_000427625.1_operon1 is identical to ref7 but kept for subsequent analysis
+NOTE: GCA_900114285.1_operon1 is identical to ref11 but kept for subsequent analysis
+NOTE: GCA_000499825.2_operon1 is identical to ref16 but kept for subsequent analysis
+NOTE: GCA_000304315.1_operon1 is identical to ref17 but kept for subsequent analysis
+NOTE: GCA_000733855.1_operon2 is identical to ref20 but kept for subsequent analysis
+NOTE: GCA_001644045.1_operon2 is identical to ref22 but kept for subsequent analysis
+NOTE: GCA_001644045.1_operon1 is identical to ref23 but kept for subsequent analysis
+NOTE: GCA_000214665.1_operon1 is identical to ref24 but kept for subsequent analysis
+NOTE: GCA_002072955.1_operon1 is identical to ref27 but kept for subsequent analysis
+NOTE: GCA_000740745.1_operon1 is identical to ref35 but kept for subsequent analysis
+NOTE: GCA_000009145.1_operon2 is identical to ref38 but kept for subsequent analysis
+NOTE: GCA_000192415.1_operon1 is identical to ref41 but kept for subsequent analysis
+NOTE: GCA_000242875.2_operon1 is identical to ref43 but kept for subsequent analysis
+NOTE: GCA_009936375.1_operon3 is identical to GCA_009936375.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000297415.1_operon3 is identical to GCA_004421155.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000297415.1_operon1 is identical to GCA_004421155.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000619905.2_operon2 is identical to GCA_000619905.2_operon1 but kept for subsequent analysis
+NOTE: GCA_011772925.1_operon1 is identical to GCA_011773785.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900155475.1_operon3 is identical to GCA_900155475.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000328925.1_operon2 is identical to GCA_000299395.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002928745.1_operon1 is identical to GCA_002928495.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018129935.1_operon1 is identical to GCA_018129805.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018668785.1_operon1 is identical to GCA_018697995.1_operon1 but kept for subsequent analysis
+NOTE: GCA_004366495.1_operon1 is identical to GCA_000685825.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000685825.1_operon3 is identical to GCA_000685825.1_operon2 but kept for subsequent analysis
+NOTE: GCA_014066365.1_operon1 is identical to GCA_012928605.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001644025.1_operon2 is identical to GCA_011882205.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002088235.1_operon1 is identical to GCA_004213245.1_operon1 but kept for subsequent analysis
+NOTE: GCA_012961165.1_operon1 is identical to GCA_015659515.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015709525.1_operon2 is identical to GCA_015709465.1_operon2 but kept for subsequent analysis
+NOTE: GCA_001919295.1_operon1 is identical to GCA_001918475.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009840065.1_operon1 is identical to GCA_009841735.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000384075.1_operon1 is identical to GCA_002929035.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003666325.1_operon1 is identical to GCA_003666345.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000304315.1_operon3 is identical to GCA_000304315.1_operon2 but kept for subsequent analysis
+NOTE: GCA_007004125.1_operon1 is identical to GCA_018887255.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000012805.1_operon1 is identical to GCA_007990675.1_operon1 but kept for subsequent analysis
+NOTE: GCA_008030245.1_operon1 is identical to GCA_008030135.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002117405.1_operon4 is identical to GCA_002117405.1_operon3 but kept for subsequent analysis
+NOTE: GCA_001552795.1_operon1 is identical to GCA_000380645.1_operon1 but kept for subsequent analysis
+NOTE: GCA_013407275.1_operon1 is identical to GCA_000685395.1_operon1 but kept for subsequent analysis
+NOTE: GCA_017656525.1_operon1 is identical to GCA_017656075.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018129755.1_operon1 is identical to GCA_018129645.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000008325.1_operon2 is identical to GCA_000008325.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000178815.2_operon2 is identical to GCA_000178815.2_operon1 but kept for subsequent analysis
+NOTE: GCA_000379125.1_operon3 is identical to GCA_000379125.1_operon1 but kept for subsequent analysis
+NOTE: GCA_022836435.1_operon2 is identical to GCA_022836435.1_operon1 but kept for subsequent analysis
+NOTE: GCA_004340695.1_operon1 is identical to GCA_003201565.1_operon1 but kept for subsequent analysis
+NOTE: GCA_024281415.1_operon1 is identical to GCA_016722055.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000383855.1_operon1 is identical to GCA_000746145.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003722355.1_operon3 is identical to GCA_003722355.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000955905.1_operon1 is identical to GCA_000955905.3_operon1 but kept for subsequent analysis
+NOTE: GCA_003352265.1_operon1 is identical to GCA_003352295.1_operon1 but kept for subsequent analysis
+NOTE: GCA_019635155.1_operon2 is identical to GCA_019635155.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900103165.1_operon2 is identical to GCA_900103165.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003046355.1_operon1 is identical to GCA_900100815.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000241145.1_operon1 is identical to GCA_000241145.2_operon1 but kept for subsequent analysis
+NOTE: GCA_018066825.1_operon1 is identical to GCA_018067295.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000875775.1_operon1 is identical to GCA_014078535.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900206265.1_operon2 is identical to GCA_900206265.1_operon1 but kept for subsequent analysis
+NOTE: GCA_014850975.1_operon2 is identical to GCA_903064685.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000014765.1_operon2 is identical to GCA_000014765.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002929135.1_operon1 is identical to GCA_002928855.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009811675.1_operon1 is identical to GCA_003113265.1_operon1 but kept for subsequent analysis
+NOTE: GCA_011774755.1_operon1 is identical to GCA_011777025.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000175095.2_operon2 is identical to GCA_000175095.2_operon1 but kept for subsequent analysis
+NOTE: GCA_007991775.1_operon1 is identical to GCA_000936425.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015659495.1_operon1 is identical to GCA_012959695.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015659495.1_operon2 is identical to GCA_012959695.1_operon2 but kept for subsequent analysis
+NOTE: GCA_903064715.1_operon1 is identical to GCA_014850955.1_operon1 but kept for subsequent analysis
+NOTE: GCA_903064715.1_operon2 is identical to GCA_014850955.1_operon2 but kept for subsequent analysis
+NOTE: GCA_016705625.1_operon2 is identical to GCA_016705625.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001007935.1_operon1 is identical to GCA_008124795.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015709455.1_operon3 is identical to GCA_015709455.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003855495.1_operon2 is identical to GCA_003855495.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002700385.1_operon1 is identical to GCA_002716545.1_operon1 but kept for subsequent analysis
+NOTE: GCA_012966345.1_operon1 is identical to GCA_015663695.1_operon1 but kept for subsequent analysis
+NOTE: GCA_004799025.1_operon1 is identical to GCA_004364935.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002834115.1_operon2 is identical to GCA_016865255.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015709635.1_operon2 is identical to GCA_015709635.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000220175.1_operon1 is identical to GCA_000220175.2_operon1 but kept for subsequent analysis
+NOTE: GCA_016106165.1_operon1 is identical to GCA_013521055.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900103035.1_operon2 is identical to GCA_900103035.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000009145.1_operon1 is identical to GCA_900106625.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018815385.1_operon2 is identical to GCA_002706265.1_operon2 but kept for subsequent analysis
+NOTE: GCA_003666385.1_operon1 is identical to GCA_003666335.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001644115.1_operon2 is identical to GCA_000365425.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000341735.1_operon1 is identical to GCA_005931095.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002068095.1_operon1 is identical to GCA_007828015.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003724255.1_operon1 is identical to GCA_003724325.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018647405.1_operon1 is identical to GCA_018657705.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000812185.1_operon1 is identical to GCA_003045125.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001770965.1_operon2 is identical to GCA_001770895.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000745215.1_operon3 is identical to GCA_000745215.1_operon2 but kept for subsequent analysis
+NOTE: GCA_016869555.1_operon2 is identical to GCA_016870015.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015709615.1_operon2 is identical to GCA_015709615.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000355765.4_operon2 is identical to GCA_000355765.4_operon1 but kept for subsequent analysis
+NOTE: GCA_024331225.1_operon1 is identical to GCA_024331065.1_operon1 but kept for subsequent analysis
+NOTE: GCA_012026875.1_operon1 is identical to GCA_003104975.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015075225.1_operon1 is identical to GCA_021463765.1_operon1 but kept for subsequent analysis
+NOTE: GCA_010028485.1_operon1 is identical to GCA_010028435.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003633815.1_operon2 is identical to GCA_003633815.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018982845.1_operon2 is identical to GCA_018982845.1_operon1 but kept for subsequent analysis
+NOTE: GCA_011058845.1_operon1 is identical to GCA_018982845.1_operon3 but kept for subsequent analysis
+NOTE: GCA_003664085.1_operon2 is identical to GCA_003664085.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000196355.1_operon2 is identical to GCA_000196355.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002737455.1_operon1 is identical to GCA_009694705.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900215345.1_operon1 is identical to GCA_001455205.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001455205.1_operon3 is identical to GCA_001455205.1_operon2 but kept for subsequent analysis
+NOTE: GCA_018680225.1_operon1 is identical to GCA_013043295.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015659465.1_operon1 is identical to GCA_012960755.1_operon1 but kept for subsequent analysis
+NOTE: GCA_013867285.1_operon1 is identical to GCA_013867345.1_operon1 but kept for subsequent analysis
+NOTE: GCA_002906215.1_operon1 is identical to GCA_900248165.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003046255.1_operon1 is identical to GCA_003514765.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900110385.1_operon1 is identical to GCA_900106555.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003584645.1_operon2 is identical to GCA_003584645.1_operon1 but kept for subsequent analysis
+NOTE: GCA_001644035.1_operon1 is identical to GCA_001644115.1_operon1 but kept for subsequent analysis
+NOTE: GCA_018406445.1_operon2 is identical to GCA_018406445.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003500095.1_operon1 is identical to GCA_009996705.1_operon2 but kept for subsequent analysis
+NOTE: GCA_009843815.1_operon1 is identical to GCA_009839185.1_operon1 but kept for subsequent analysis
+NOTE: GCA_004571045.1_operon1 is identical to GCA_003957705.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009498235.1_operon2 is identical to GCA_009498235.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015659575.1_operon1 is identical to GCA_012960135.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900215485.1_operon2 is identical to GCA_900215485.1_operon1 but kept for subsequent analysis
+NOTE: GCA_007475525.1_operon4 is identical to GCA_000817245.1_operon4 but kept for subsequent analysis
+NOTE: GCA_018069465.1_operon1 is identical to GCA_018066765.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000091165.1_operon1 is identical to GCA_009026205.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000214275.3_operon2 is identical to GCA_000733855.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000219585.1_operon2 is identical to GCA_000219585.1_operon1 but kept for subsequent analysis
+NOTE: GCA_004802635.2_operon3 is identical to GCA_004802635.2_operon1 but kept for subsequent analysis
+NOTE: GCA_009685195.1_operon2 is identical to GCA_000283235.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009685195.1_operon1 is identical to GCA_000283235.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000297415.1_operon2 is identical to GCA_004421155.1_operon3 but kept for subsequent analysis
+NOTE: GCA_017833335.1_operon1 is identical to GCA_004363855.1_operon1 but kept for subsequent analysis
+NOTE: GCA_024331045.1_operon1 is identical to GCA_024331025.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900103145.1_operon1 is identical to GCA_003268895.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900696515.1_operon1 is identical to GCA_900078515.1_operon1 but kept for subsequent analysis
+NOTE: GCA_005877105.1_operon1 is identical to GCA_005877345.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003050865.1_operon1 is identical to GCA_003268875.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900115325.1_operon1 is identical to GCA_900115125.1_operon1 but kept for subsequent analysis
+NOTE: GCA_024330925.1_operon1 is identical to GCA_024330945.1_operon1 but kept for subsequent analysis
+NOTE: GCA_005799375.1_operon1 is identical to GCA_005808705.1_operon2 but kept for subsequent analysis
+NOTE: GCA_000802205.2_operon1 is identical to GCA_000802205.1_operon1 but kept for subsequent analysis
+NOTE: GCA_005877075.1_operon1 is identical to GCA_005877385.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003201725.1_operon1 is identical to GCA_003051045.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900114305.1_operon1 is identical to GCA_003046585.1_operon1 but kept for subsequent analysis
+NOTE: GCA_008389435.1_operon1 is identical to GCA_009861625.1_operon1 but kept for subsequent analysis
+NOTE: GCA_015904125.1_operon1 is identical to GCA_015904055.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009595005.1_operon1 is identical to GCA_002254365.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900107715.1_operon1 is identical to GCA_900108135.1_operon1 but kept for subsequent analysis
+NOTE: GCA_000299365.1_operon1 is identical to GCA_000328925.1_operon1 but kept for subsequent analysis
+NOTE: GCA_005116835.1_operon1 is identical to GCA_013140535.1_operon1 but kept for subsequent analysis
+NOTE: GCA_919901595.1_operon1 is identical to GCA_005116885.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900110495.1_operon1 is identical to GCA_003663975.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003529185.1_operon1 is identical to GCA_002420045.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003050805.1_operon2 is identical to GCA_003046215.1_operon1 but kept for subsequent analysis
+NOTE: GCA_003046605.1_operon1 is identical to GCA_003050825.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009996705.1_operon1 is identical to GCA_003500065.1_operon1 but kept for subsequent analysis
+NOTE: GCA_016106405.1_operon1 is identical to GCA_022117455.1_operon1 but kept for subsequent analysis
+NOTE: GCA_900116835.1_operon1 is identical to GCA_003269055.1_operon1 but kept for subsequent analysis
+NOTE: GCA_009927345.1_operon1 is identical to GCA_010031535.1_operon1 but kept for subsequent analysis
+NOTE: GCA_019750685.1_operon1 is identical to GCA_002083405.1_operon1 but kept for subsequent analysis
+NOTE: GCA_006742785.1_operon2 is identical to GCA_006742785.1_operon1 but kept for subsequent analysis
+NOTE: 101 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: GCA_007475525.1_operon1 (identical to ref6) is ignored but added at the end
+NOTE: GCA_000372845.1_operon1 (identical to ref16) is ignored but added at the end
+NOTE: GCA_000372845.1_operon2 (identical to ref16) is ignored but added at the end
+NOTE: GCA_009685175.1_operon1 (identical to ref16) is ignored but added at the end
+NOTE: GCA_009685175.1_operon2 (identical to ref16) is ignored but added at the end
+NOTE: GCA_000214275.3_operon1 (identical to ref20) is ignored but added at the end
+NOTE: GCA_004343025.1_operon2 (identical to ref22) is ignored but added at the end
+NOTE: GCA_000785705.2_operon2 (identical to ref22) is ignored but added at the end
+NOTE: GCA_004343025.1_operon1 (identical to ref23) is ignored but added at the end
+NOTE: GCA_000785705.2_operon1 (identical to ref23) is ignored but added at the end
+NOTE: GCA_000242875.3_operon1 (identical to ref43) is ignored but added at the end
+NOTE: GCA_004421195.1_operon1 (identical to GCA_004421155.1_operon1) is ignored but added at the end
+NOTE: GCA_004421165.1_operon1 (identical to GCA_004421155.1_operon1) is ignored but added at the end
+NOTE: GCA_004421175.1_operon3 (identical to GCA_004421155.1_operon1) is ignored but added at the end
+NOTE: GCA_004421195.1_operon2 (identical to GCA_004421155.1_operon2) is ignored but added at the end
+NOTE: GCA_004421165.1_operon2 (identical to GCA_004421155.1_operon2) is ignored but added at the end
+NOTE: GCA_004421175.1_operon1 (identical to GCA_004421155.1_operon2) is ignored but added at the end
+NOTE: GCA_000619905.2_operon3 (identical to GCA_000619905.2_operon1) is ignored but added at the end
+NOTE: GCA_011771385.1_operon1 (identical to GCA_011773785.1_operon1) is ignored but added at the end
+NOTE: GCA_011773125.1_operon1 (identical to GCA_011773785.1_operon1) is ignored but added at the end
+NOTE: GCA_018129965.1_operon1 (identical to GCA_018129805.1_operon1) is ignored but added at the end
+NOTE: GCA_018129925.1_operon1 (identical to GCA_018129805.1_operon1) is ignored but added at the end
+NOTE: GCA_018129785.1_operon1 (identical to GCA_018129805.1_operon1) is ignored but added at the end
+NOTE: GCA_018667815.1_operon1 (identical to GCA_018697995.1_operon1) is ignored but added at the end
+NOTE: GCA_018661125.1_operon1 (identical to GCA_018697995.1_operon1) is ignored but added at the end
+NOTE: GCA_001644125.1_operon1 (identical to GCA_000685825.1_operon2) is ignored but added at the end
+NOTE: GCA_000527115.1_operon2 (identical to GCA_000685825.1_operon2) is ignored but added at the end
+NOTE: GCA_000527115.1_operon3 (identical to GCA_000685825.1_operon2) is ignored but added at the end
+NOTE: GCA_013390485.1_operon1 (identical to GCA_012928605.1_operon1) is ignored but added at the end
+NOTE: GCA_013390865.1_operon1 (identical to GCA_012928605.1_operon1) is ignored but added at the end
+NOTE: GCA_013390475.1_operon1 (identical to GCA_012928605.1_operon1) is ignored but added at the end
+NOTE: GCA_001917505.1_operon1 (identical to GCA_001918475.1_operon1) is ignored but added at the end
+NOTE: GCA_001917995.1_operon1 (identical to GCA_001918475.1_operon1) is ignored but added at the end
+NOTE: GCA_009842575.1_operon1 (identical to GCA_009841735.1_operon1) is ignored but added at the end
+NOTE: GCA_009837245.1_operon1 (identical to GCA_009841735.1_operon1) is ignored but added at the end
+NOTE: GCA_009841175.1_operon1 (identical to GCA_009841735.1_operon1) is ignored but added at the end
+NOTE: GCA_008030115.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030145.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030225.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030255.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030215.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030155.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030235.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_008030125.1_operon1 (identical to GCA_008030135.1_operon1) is ignored but added at the end
+NOTE: GCA_018129705.1_operon1 (identical to GCA_018129645.1_operon1) is ignored but added at the end
+NOTE: GCA_019285575.1_operon1 (identical to GCA_000008325.1_operon1) is ignored but added at the end
+NOTE: GCA_019285575.1_operon2 (identical to GCA_000008325.1_operon1) is ignored but added at the end
+NOTE: GCA_019285535.1_operon2 (identical to GCA_000008325.1_operon1) is ignored but added at the end
+NOTE: GCA_001675455.1_operon1 (identical to GCA_000178815.2_operon1) is ignored but added at the end
+NOTE: GCA_002752655.1_operon1 (identical to GCA_000178815.2_operon1) is ignored but added at the end
+NOTE: GCA_002752655.1_operon2 (identical to GCA_000178815.2_operon1) is ignored but added at the end
+NOTE: GCA_022836435.1_operon3 (identical to GCA_022836435.1_operon1) is ignored but added at the end
+NOTE: GCA_016214455.1_operon1 (identical to GCA_003722355.1_operon1) is ignored but added at the end
+NOTE: GCA_003352245.1_operon1 (identical to GCA_003352295.1_operon1) is ignored but added at the end
+NOTE: GCA_003352285.1_operon1 (identical to GCA_003352295.1_operon1) is ignored but added at the end
+NOTE: GCA_900103165.1_operon3 (identical to GCA_900103165.1_operon1) is ignored but added at the end
+NOTE: GCA_900206265.1_operon3 (identical to GCA_900206265.1_operon1) is ignored but added at the end
+NOTE: GCA_900108975.1_operon1 (identical to GCA_000014765.1_operon1) is ignored but added at the end
+NOTE: GCA_003201195.1_operon1 (identical to GCA_000014765.1_operon1) is ignored but added at the end
+NOTE: GCA_002929015.1_operon1 (identical to GCA_002928855.1_operon1) is ignored but added at the end
+NOTE: GCA_011775845.1_operon1 (identical to GCA_011777025.1_operon1) is ignored but added at the end
+NOTE: GCA_011774125.1_operon1 (identical to GCA_011777025.1_operon1) is ignored but added at the end
+NOTE: GCA_011776245.1_operon1 (identical to GCA_011777025.1_operon1) is ignored but added at the end
+NOTE: GCA_000175095.2_operon3 (identical to GCA_000175095.2_operon1) is ignored but added at the end
+NOTE: GCA_015664555.1_operon1 (identical to GCA_015663695.1_operon1) is ignored but added at the end
+NOTE: GCA_012965425.1_operon1 (identical to GCA_015663695.1_operon1) is ignored but added at the end
+NOTE: GCA_015664155.1_operon1 (identical to GCA_015663695.1_operon1) is ignored but added at the end
+NOTE: GCA_015709635.1_operon3 (identical to GCA_015709635.1_operon1) is ignored but added at the end
+NOTE: GCA_016106185.1_operon1 (identical to GCA_013521055.1_operon1) is ignored but added at the end
+NOTE: GCA_002338645.1_operon1 (identical to GCA_900103035.1_operon1) is ignored but added at the end
+NOTE: GCA_001644035.1_operon3 (identical to GCA_000365425.1_operon2) is ignored but added at the end
+NOTE: GCA_007828095.1_operon1 (identical to GCA_007828015.1_operon1) is ignored but added at the end
+NOTE: GCA_018655005.1_operon1 (identical to GCA_018657705.1_operon1) is ignored but added at the end
+NOTE: GCA_015709615.1_operon3 (identical to GCA_015709615.1_operon1) is ignored but added at the end
+NOTE: GCA_000355765.4_operon3 (identical to GCA_000355765.4_operon1) is ignored but added at the end
+NOTE: GCA_010028495.1_operon1 (identical to GCA_010028435.1_operon1) is ignored but added at the end
+NOTE: GCA_010028425.1_operon1 (identical to GCA_010028435.1_operon1) is ignored but added at the end
+NOTE: GCA_003633815.1_operon3 (identical to GCA_003633815.1_operon1) is ignored but added at the end
+NOTE: GCA_003664085.1_operon3 (identical to GCA_003664085.1_operon1) is ignored but added at the end
+NOTE: GCA_000196355.1_operon3 (identical to GCA_000196355.1_operon1) is ignored but added at the end
+NOTE: GCA_900215345.1_operon2 (identical to GCA_001455205.1_operon1) is ignored but added at the end
+NOTE: GCA_900215345.1_operon3 (identical to GCA_001455205.1_operon1) is ignored but added at the end
+NOTE: GCA_018406445.1_operon3 (identical to GCA_018406445.1_operon1) is ignored but added at the end
+NOTE: GCA_004570865.1_operon1 (identical to GCA_003957705.1_operon1) is ignored but added at the end
+NOTE: GCA_000219585.1_operon3 (identical to GCA_000219585.1_operon1) is ignored but added at the end
+NOTE: GCA_009685195.1_operon3 (identical to GCA_000283235.1_operon2) is ignored but added at the end
+NOTE: GCA_004421195.1_operon3 (identical to GCA_004421155.1_operon3) is ignored but added at the end
+NOTE: GCA_004421165.1_operon3 (identical to GCA_004421155.1_operon3) is ignored but added at the end
+NOTE: GCA_004421175.1_operon2 (identical to GCA_004421155.1_operon3) is ignored but added at the end
+NOTE: GCA_017833355.1_operon1 (identical to GCA_004363855.1_operon1) is ignored but added at the end
+NOTE: GCA_900142705.1_operon1 (identical to GCA_003268895.1_operon1) is ignored but added at the end
+NOTE: GCA_002083355.1_operon1 (identical to GCA_900078515.1_operon1) is ignored but added at the end
+NOTE: GCA_004365265.1_operon1 (identical to GCA_003268875.1_operon1) is ignored but added at the end
+NOTE: GCA_004364015.1_operon1 (identical to GCA_003268875.1_operon1) is ignored but added at the end
+NOTE: GCA_005773025.1_operon1 (identical to GCA_005808705.1_operon2) is ignored but added at the end
+NOTE: GCA_900111055.1_operon1 (identical to GCA_003051045.1_operon1) is ignored but added at the end
+NOTE: GCA_015904025.1_operon1 (identical to GCA_015904055.1_operon1) is ignored but added at the end
+NOTE: GCA_919902055.1_operon1 (identical to GCA_005116885.1_operon1) is ignored but added at the end
+NOTE: GCA_003500095.1_operon2 (identical to GCA_003500065.1_operon1) is ignored but added at the end
+NOTE: GCA_004684205.1_operon1 (identical to GCA_003500065.1_operon1) is ignored but added at the end
+NOTE: GCA_013521015.1_operon1 (identical to GCA_022117455.1_operon1) is ignored but added at the end
+Concatenated alignment was printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.625 seconds
+NOTE: ModelFinder requires 1069 MB RAM!
+Testing LG+F+G on supermatrix...
+LG+F+G4 / LnL: -259597.652 / df: 2135 / AIC: 523465.305 / AICc: 9644185.305 / BIC: 535162.404
+Selecting individual models for 3 charsets using BIC...
+ No. Model        Score       Charset
+   1 LG+I+G4      263558.922  xmoB
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+   2 LG+I+G4      125089.423  xmoA
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+   3 LG+I+G4      131540.315  xmoC
+Full partition model BIC score: 536008.905 (LnL: -260065.776  df:2123)
+Merging models to increase model fit (about 7 total partition schemes)...
+   4 LG+I+G4      536004.379  xmoC+xmoA
+   5 LG+I+G4      536224.001  xmoA+xmoB
+   6 LG+I+G4      536127.520  xmoC+xmoB
+Merging xmoC+xmoA with BIC score: 536004.379 (LnL: -260074.730  df: 2120)
+   7 LG+I+G4      536236.764  xmoC+xmoA+xmoB
+BEST-FIT PARTITION MODEL: 
+  charpartition BIC = LG+I+G4: xmoC xmoA, LG+I+G4: xmoB;
+Agglomerative model selection: ((xmoC,xmoA)1:536004,xmoB)
+Merging into 2 partitions...
+Partition information was printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.best_scheme.nex
+Partition information in Raxml format was printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.best_scheme
+
+WARNING: Partition merging found worse model than single model!
+WARNING: Please do not use partition model!
+
+All model information printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.model.gz
+CPU time for ModelFinder: 2562.612 seconds (0h:42m:42s)
+Wall-clock time for ModelFinder: 925.813 seconds (0h:15m:25s)
+Generating 1000 samples for ultrafast bootstrap (seed: 799205)...
+
+NOTE: 1128 MB RAM (1 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -260284.284
+Current log-likelihood at step 1: -260080.386
+Current log-likelihood at step 2: -260063.556
+Current log-likelihood at step 3: -260062.041
+Current log-likelihood at step 4: -260061.878
+Current log-likelihood at step 5: -260061.863
+Partition-specific rates:  0.840 1.187
+Parameters optimization took 4 rounds (8.897 sec)
+
+Computing ML distances based on estimated model parameters... 717.083 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+2.839 seconds
+Log-likelihood of BIONJ tree: -267429.827
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 287.938 second
+Computing log-likelihood of 98 initial trees ... 257.515 seconds
+Current best score: -260061.863
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259738.069
+Current log-likelihood at step 1: -259737.936
+Current log-likelihood at step 2: -259737.930
+Parameters optimization took 1 rounds (2.572 sec)
+
+BETTER TREE FOUND at iteration 1: -259737.930
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259674.864
+Current log-likelihood at step 1: -259674.218
+Current log-likelihood at step 2: -259674.191
+Parameters optimization took 1 rounds (2.713 sec)
+
+BETTER TREE FOUND at iteration 2: -259674.191
+Iteration 10 / LogL: -259722.455 / Time: 0h:17m:36s
+Iteration 20 / LogL: -259732.947 / Time: 0h:25m:47s
+Finish initializing candidate tree set (20)
+Current best tree score: -259674.191 / CPU time: 1495.671
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259671.053
+Current log-likelihood at step 1: -259671.021
+Parameters optimization took 0 rounds (1.399 sec)
+
+BETTER TREE FOUND at iteration 26: -259671.021
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259660.974
+Current log-likelihood at step 1: -259660.657
+Current log-likelihood at step 2: -259660.617
+Parameters optimization took 1 rounds (3.000 sec)
+
+BETTER TREE FOUND at iteration 28: -259660.617
+Iteration 30 / LogL: -259834.937 / Time: 0h:31m:53s (1h:47m:45s left)
+Iteration 40 / LogL: -260445.570 / Time: 0h:37m:58s (1h:25m:42s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259635.180
+Current log-likelihood at step 1: -259634.959
+Current log-likelihood at step 2: -259634.954
+Parameters optimization took 1 rounds (2.950 sec)
+
+BETTER TREE FOUND at iteration 43: -259634.954
+Iteration 50 / LogL: -259673.616 / Time: 0h:43m:58s (1h:23m:27s left)
+Log-likelihood cutoff on original alignment: -259810.632
+UFBoot trees printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+Iteration 60 / LogL: -259643.336 / Time: 0h:49m:45s (1h:9m:59s left)
+Iteration 70 / LogL: -259801.416 / Time: 0h:55m:19s (0h:58m:32s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259615.109
+Current log-likelihood at step 1: -259615.040
+Parameters optimization took 0 rounds (1.407 sec)
+
+BETTER TREE FOUND at iteration 74: -259615.040
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259612.507
+Current log-likelihood at step 1: -259612.355
+Current log-likelihood at step 2: -259612.334
+Parameters optimization took 1 rounds (2.838 sec)
+
+BETTER TREE FOUND at iteration 76: -259612.334
+Iteration 80 / LogL: -259673.707 / Time: 1h:1m:12s (1h:14m:22s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259599.813
+Current log-likelihood at step 1: -259599.804
+Parameters optimization took 0 rounds (1.334 sec)
+
+BETTER TREE FOUND at iteration 83: -259599.804
+Iteration 90 / LogL: -259794.189 / Time: 1h:6m:27s (1h:9m:27s left)
+Iteration 100 / LogL: -259623.796 / Time: 1h:11m:53s (1h:0m:16s left)
+Log-likelihood cutoff on original alignment: -259800.761
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+UFBoot trees printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+Iteration 110 / LogL: -259630.942 / Time: 1h:17m:37s (1h:4m:5s left)
+Iteration 120 / LogL: -259642.674 / Time: 1h:23m:28s (0h:56m:6s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -259596.737
+Current log-likelihood at step 1: -259596.660
+Parameters optimization took 0 rounds (1.431 sec)
+
+BETTER TREE FOUND at iteration 121: -259596.660
+Iteration 130 / LogL: -259636.850 / Time: 1h:29m:3s (1h:2m:49s left)
+Iteration 140 / LogL: -259629.256 / Time: 1h:34m:38s (0h:55m:9s left)
+Iteration 150 / LogL: -259621.966 / Time: 1h:40m:7s (0h:47m:42s left)
+Log-likelihood cutoff on original alignment: -259800.761
+UFBoot trees printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+Iteration 160 / LogL: -259889.146 / Time: 1h:45m:46s (0h:40m:34s left)
+Iteration 170 / LogL: -259653.732 / Time: 1h:51m:21s (0h:33m:36s left)
+Iteration 180 / LogL: -259620.346 / Time: 1h:56m:38s (0h:26m:42s left)
+Iteration 190 / LogL: -259947.218 / Time: 2h:2m:3s (0h:20m:1s left)
+Iteration 200 / LogL: -259845.605 / Time: 2h:7m:34s (0h:13m:27s left)
+Log-likelihood cutoff on original alignment: -259800.761
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+UFBoot trees printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+Iteration 210 / LogL: -260063.920 / Time: 2h:13m:22s (0h:57m:26s left)
+Iteration 220 / LogL: -259652.275 / Time: 2h:19m:4s (0h:50m:48s left)
+TREE SEARCH COMPLETED AFTER 222 ITERATIONS / Time: 2h:20m:16s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -259596.656
+Current log-likelihood at step 1: -259596.644
+Current log-likelihood at step 2: -259596.638
+Partition-specific rates:  0.845 1.181
+Parameters optimization took 1 rounds (3.031 sec)
+
+BEST SCORE FOUND : -259596.638
+Creating bootstrap support values...
+Split supports printed to NEXUS file ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.splits.nex
+Total tree length: 91.466
+
+Total number of iterations: 222
+CPU time used for tree search: 216515.656 sec (60h:8m:35s)
+Wall-clock time used for tree search: 8359.533 sec (2h:19m:19s)
+Total CPU time used: 218160.676 sec (60h:36m:0s)
+Total wall-clock time used: 8426.553 sec (2h:20m:26s)
+UFBoot trees printed to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.splits.nex...
+1059 taxa and 3949 splits.
+Consensus tree written to ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.contree
+Reading input trees file ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.contree
+Log-likelihood of consensus tree: -259594.706
+
+Analysis results written to: 
+  IQ-TREE report:                ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.iqtree
+  Maximum-likelihood tree:       ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.treefile
+  Likelihood distances:          ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.mldist
+  Best partitioning scheme:      ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.best_scheme.nex
+           in RAxML format:      ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.splits.nex
+  Consensus tree:                ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.contree
+  UFBoot trees:                  ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.ufboot
+  Screen log file:               ./gene_annotations/extra_genomes_xmoCAB/xmoCBA.log
+
+Date and Time: Sat Aug 20 03:09:36 2022

@@ -1,0 +1,149 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cl005 (AVX2, FMA3, 94 GB RAM)
+Command: iqtree -nt 2 -m LG -redo -wbtl -bb 1000 -pre /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal -s /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal
+Seed:    195060 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 30 00:56:29 2023
+Kernel:  AVX+FMA - 2 threads (64 CPU cores detected)
+
+Reading alignment file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 351 columns, 348 distinct patterns
+301 parsimony-informative, 36 singleton sites, 14 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  GCA_003003885.1            26.50%    passed     11.74%
+   2  GCA_007197755.1            12.25%    failed      0.22%
+   3  GCA_014635705.1            72.08%    passed     43.04%
+   4  GCA_007992375.1            72.08%    passed     24.66%
+   5  GCA_001007875.1            72.08%    passed     19.76%
+   6  GCA_000011385.1            34.47%    failed      1.86%
+   7  GCA_002083815.1            68.09%    failed      0.00%
+   8  GCA_000317575.1            26.50%    passed     16.48%
+   9  GCA_000264455.2             9.40%    failed      0.00%
+  10  GCA_000473895.1            25.93%    passed      7.85%
+  11  GCA_003015105.1            64.10%    passed     10.00%
+  12  GCA_000317535.1            26.21%    passed     18.86%
+  13  GCA_010027455.1            29.34%    failed      0.14%
+  14  GCA_003576955.1            65.53%    failed      4.15%
+  15  GCA_013140535.1            72.08%    failed      3.99%
+  16  GCA_000332275.1            26.50%    failed      1.80%
+  17  GCA_002355455.1            26.50%    passed     21.52%
+  18  GCA_006385135.1            12.54%    passed     68.80%
+  19  GCA_000934545.1            72.08%    passed     14.34%
+  20  GCA_000013225.1            64.67%    passed      6.71%
+  21  GCA_000014865.1            24.22%    failed      0.00%
+  22  GCA_900119825.1            72.93%    passed     22.07%
+  23  GCA_002924445.1            27.07%    failed      0.00%
+  24  GCA_000380225.1            64.10%    failed      0.06%
+  25  GCA_005877815.1            72.08%    failed      1.66%
+  26  GCA_902500715.1            72.08%    failed      3.00%
+  27  GCA_002109495.1            24.22%    failed      0.01%
+  28  GCA_000952155.1            26.21%    failed      0.31%
+  29  GCA_016788925.1            72.08%    failed      4.67%
+  30  GCA_000828615.1            72.08%    passed     24.76%
+  31  GCA_003532895.1            72.08%    passed     10.67%
+  32  GCA_006496635.1            72.08%    passed     37.98%
+  33  Arabidopsis_thaliana        8.55%    failed      0.07%
+  34  Amphimedon_queenslandica   12.25%    failed      0.00%
+  35  Phytophthora_infestans      3.42%    passed     16.38%
+  36  Oryza_sativa                9.40%    passed     37.40%
+  37  Candida_albicans           12.82%    failed      0.02%
+  38  Andalucia_godoyi           25.36%    passed      8.94%
+  39  Cyanophora_paradoxa        10.83%    passed     86.30%
+  40  Acanthamoeba_castellanii   15.95%    passed     42.85%
+WARNING: 17 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      41.22%  19 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 195060)...
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -15046.414
+Optimal log-likelihood: -14770.416
+Parameters optimization took 1 rounds (0.029 sec)
+Computing ML distances based on estimated model parameters... 0.214 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.003 seconds
+Log-likelihood of BIONJ tree: -14903.841
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.877 second
+Computing log-likelihood of 98 initial trees ... 1.582 seconds
+Current best score: -14741.419
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -14712.304
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -14709.353
+Iteration 10 / LogL: -14709.354 / Time: 0h:0m:4s
+Iteration 20 / LogL: -14709.353 / Time: 0h:0m:6s
+Finish initializing candidate tree set (17)
+Current best tree score: -14709.353 / CPU time: 6.270
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -14706.655
+Iteration 30 / LogL: -14709.314 / Time: 0h:0m:8s (0h:0m:27s left)
+Iteration 40 / LogL: -14706.655 / Time: 0h:0m:10s (0h:0m:22s left)
+Iteration 50 / LogL: -14709.244 / Time: 0h:0m:12s (0h:0m:19s left)
+Log-likelihood cutoff on original alignment: -14742.233
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.ufboot
+Iteration 60 / LogL: -14708.843 / Time: 0h:0m:15s (0h:0m:16s left)
+Iteration 70 / LogL: -14707.865 / Time: 0h:0m:17s (0h:0m:13s left)
+Iteration 80 / LogL: -14706.681 / Time: 0h:0m:19s (0h:0m:11s left)
+Iteration 90 / LogL: -14709.242 / Time: 0h:0m:21s (0h:0m:8s left)
+Iteration 100 / LogL: -14710.424 / Time: 0h:0m:23s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -14742.233
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.ufboot
+Iteration 110 / LogL: -14706.690 / Time: 0h:0m:26s (0h:0m:21s left)
+Iteration 120 / LogL: -14784.176 / Time: 0h:0m:28s (0h:0m:19s left)
+TREE SEARCH COMPLETED AFTER 126 ITERATIONS / Time: 0h:0m:29s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -14706.655
+Optimal log-likelihood: -14706.655
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -14706.655
+Creating bootstrap support values...
+Split supports printed to NEXUS file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.splits.nex
+Total tree length: 20.145
+
+Total number of iterations: 126
+CPU time used for tree search: 58.137 sec (0h:0m:58s)
+Wall-clock time used for tree search: 29.710 sec (0h:0m:29s)
+Total CPU time used: 58.982 sec (0h:0m:58s)
+Total wall-clock time used: 30.152 sec (0h:0m:30s)
+UFBoot trees printed to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.splits.nex...
+40 taxa and 318 splits.
+Consensus tree written to /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.contree
+Reading input trees file /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.contree
+Log-likelihood of consensus tree: -14706.655
+
+Analysis results written to: 
+  IQ-TREE report:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.iqtree
+  Maximum-likelihood tree:       /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.treefile
+  Likelihood distances:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.splits.nex
+  Consensus tree:                /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.contree
+  UFBoot trees:                  /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.ufboot
+  Screen log file:               /mnt/ivy/thliao/project/AOB/analysis/20210713_repeat/add_Chromatiaces/phy_files/GnomezR19_prot/withEuk_refined/TILS.trimal.log
+
+Date and Time: Tue May 30 00:56:59 2023
